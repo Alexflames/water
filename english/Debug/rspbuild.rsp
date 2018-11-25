@@ -1,8 +1,0 @@
-# Ёто ответный файл дл€ примера
-# Test.exe 
-
-/r:System.Windows.Forms.dll
-
-# ѕараметры вывода и подлежащие компил€ции файлы
-
-/target:exe  /out:Test.exe  *.cs
