@@ -66,13 +66,19 @@ class Vector:
         return Vector(list(map(lambda x: -x, self.comp)))
 
     def __add__(self, other):
-        return Vector(self.x + other.x, self.y + other.y)
+        new_vector = Vector([])
+        for i in range(len(self.comp)):
+            new_vector.comp.append(self[i] + other[i])
+        return new_vector
 
     def __mul__(self, other):
         if isinstance(other, int) or isinstance(other, float):
-            return Vector(self.x * other, self.y * other)
+            return Vector(list(map(lambda x: x * other, self.comp)))
         else:
-            return self.x * other.x + self.y * other.y
+            new_vector = Vector([])
+            for i in range(len(self.comp)):
+                new_vector.comp.append(self[i] * other[i])
+                return new_vector
 
     def __str__(self):
         s = "("
@@ -107,4 +113,8 @@ print(v1.normalize())
 v3 = Vector([6, 8, 10])
 print(v3.normalize())
 print(Vector.collinear(v1, v3))
+print(v1 + v2)
+print(v1 * v2)
+print(v1 * 5)
+        
 
