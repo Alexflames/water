@@ -1,0 +1,267 @@
+Ticker,Sector,Industry,Title
+ABRD,Consumer Non-Cyclicals,Distillers & Wineries,ABRAU-DURSO
+ACKO,Financials,Multiline Insurance & Brokers,ASKO-STRAKHOVANIE
+AFKS,Telecommunications Services,Integrated Telecommunications Services,SISTEMA PJSFC
+AFLT,Industrials,Airlines,AEROFLOT
+AGRO,Consumer Non-Cyclicals,Food Processing,ROS AGRO PLC
+AKRN,Basic Materials,Agricultural Chemicals,ACRON
+ALNU,Basic Materials,Precious Metals & Minerals,ALROSA-NYURBA
+ALRS,Basic Materials,Precious Metals & Minerals,ALROSA
+AMEZ,Basic Materials,Steel,ASHINSKIY METALLUR
+APTK,Consumer Non-Cyclicals,Drug Retailers,PHARMACY CHAIN 36
+AQUA,Consumer Non-Cyclicals,Food Processing,RUSSIAN AQUACULTUR
+ARMD,Technology,IT Services & Consulting,ARMADA
+ARSA,Financials,Investment Management & Fund Operators,ARSAGERA ASSET MGM
+ASSB,Utilities,Electric Utilities,ASTRAKHAN POWER SA
+BANE,Energy,Integrated Oil & Gas,BASHNEFT
+BANEP,Energy,Integrated Oil & Gas,BASHNEFT
+BELU,Consumer Non-Cyclicals,Distillers & Wineries,BELUGA GROUP
+BISV,Telecommunications Services,Integrated Telecommunications Services,BASHINFORMSVYAZ
+BISVP,Telecommunications Services,Integrated Telecommunications Services,BASHINFORMSVYAZ
+BLNG,Energy,Coal,BELON
+BRZL,Basic Materials,Gold,BURYATZOLOTO
+BSPB,Financials,Banks,BANK ST PETERSBURG
+CBOM,Financials,Banks,CREDBK OF MOSCOW
+CHEP,Basic Materials,Steel,CHELYABINSK PIPE
+CHGZ,Financials,Real Estate Development & Operations,RN-WESTERN SIBERIA
+CHKZ,Consumer Cyclicals,"Auto, Truck & Motorcycle Parts",CHELYABINSK FORGE&
+CHMF,Basic Materials,Steel,SEVERSTAL
+CHMK,Basic Materials,Steel,CHELYABINSK MET PL
+CLSB,Utilities,Electric Utilities,CHELYABINSK POWER
+CLSBP,Utilities,Electric Utilities,CHELYABINSK POWER
+CNTL,Telecommunications Services,Integrated Telecommunications Services,CENTRAL TELEGRAPH
+CNTLP,Telecommunications Services,Integrated Telecommunications Services,CENTRAL TELEGRAPH
+DASB,,,DAGESTAN ENERGY SU
+DIOD,Healthcare,Pharmaceuticals,DIOD
+DSKY,Consumer Cyclicals,Department Stores,DETSKY MIR PUBLIC
+DVEC,Utilities,Electric Utilities,FAR EASTERN ENERGY
+DZRD,Industrials,Electrical Components & Equipment,DONSKOY FACTORY OF
+DZRDP,Industrials,Electrical Components & Equipment,DONSKOY FACTORY OF
+EELT,Industrials,Construction & Engineering,EUROPEAN ELTECH
+ELTZ,Basic Materials,Specialty Mining & Metals,ELECTROZINK
+ENPL,Basic Materials,Aluminum,EN+ GROUP PLC
+ENRU,Utilities,Electric Utilities,ENEL RUSSIA
+FEES,Utilities,Electric Utilities,FSK EES
+FESH,Industrials,Marine Freight & Logistics,FAR-EASTERN SHIPPI
+FIVE,Consumer Non-Cyclicals,Food Retail & Distribution,X5 RETAIL GROUP NV
+FTRE,Financials,Investment Management & Fund Operators,FINL GROUP FUTURE
+GAZA,Consumer Cyclicals,Auto & Truck Manufacturers,GAZ PUBLIC JOINT
+GAZAP,Consumer Cyclicals,Auto & Truck Manufacturers,GAZ PUBLIC JOINT
+GAZP,Energy,Integrated Oil & Gas,GAZPROM
+GAZS,,,GAZ-SERVICE
+GCHE,Consumer Non-Cyclicals,Fishing & Farming,CHERKIZOVO GROUP
+GMKN,Basic Materials,Specialty Mining & Metals,MMC NORILSK NICKEL
+GRNT,Industrials,Construction & Engineering,CITY INNOVATIVE TE
+GTLC,Industrials,Construction & Engineering,GAS TO LIQUID JSC
+GTRK,Industrials,Business Support Services,GLOBALTRUCK MGMT
+GTSS,,,GEOTECH SEISMIC SE
+HALS,Consumer Cyclicals,Homebuilding,HALS-DEVELOPMENT
+HIMCP,Basic Materials,Commodity Chemicals,KHIMPROM
+HYDR,Utilities,Electric Utilities,RUSHYDRO
+IDVP,,,INVEST-DEVELOPMENT
+IGST,Basic Materials,Steel,IZHSTAL PAO PUBIC
+IRAO,Utilities,Electric Utilities,INTER RAO UES
+IRGZ,Utilities,Electric Utilities,IRKUTSKENERGO
+IRKT,Industrials,Aerospace & Defense,IRKUT CORPORATION
+ISKJ,Healthcare,Biotechnology & Medical Research,HUMAN STEM CELLS
+JNOS,Energy,Oil & Gas Refining and Marketing,SLAVNEFT YAROSLAVN
+JNOSP,Energy,Oil & Gas Refining and Marketing,SLAVNEFT YAROSLAVN
+KAZT,Basic Materials,Specialty Chemicals,KUIBYSHEVAZOT
+KAZTP,Basic Materials,Specialty Chemicals,KUIBYSHEVAZOT
+KBSB,Utilities,Electric Utilities,TNS ENERGO KUBAN
+KBTK,Energy,Coal,KUZBASSKAYA TOP CO
+KCHE,Utilities,Electric Utilities,KAMCHATSKENERGO P
+KGKC,,,KURGAN GENERATION
+KGKCP,,,KURGAN GENERATION
+KLSB,Utilities,Electric Utilities,KALUGA POWER SALE
+KMAZ,Industrials,Heavy Machinery & Vehicles,KAMAZ PTC
+KMEZ,Industrials,Industrial Machinery & Equipment,KOVROV MECHANICAL
+KMTZ,,,KGIW
+KOGK,Basic Materials,Steel,KORSHYNOV MINING
+KRKN,Energy,Oil & Gas Refining and Marketing,SARATOV OIL REFINE
+KRKNP,Energy,Oil & Gas Refining and Marketing,SARATOV OIL REFINE
+KRKOP,Industrials,Industrial Machinery & Equipment,KRASNY KOTELSHCHIK
+KROT,Consumer Non-Cyclicals,Food Processing,KRASNYJ OCTYABR
+KROTP,Consumer Non-Cyclicals,Food Processing,KRASNYJ OCTYABR
+KRSB,Utilities,Electric Utilities,KRASNOYARSKENERGOS
+KRSBP,Utilities,Electric Utilities,KRASNOYARSKENERGOS
+KSGR,,,KOKS
+KTSB,Utilities,Electric Utilities,KOSTROMSKAYA SBYTO
+KTSBP,Utilities,Electric Utilities,KOSTROMSKAYA SBYTO
+KUBE,Utilities,Electric Utilities,KUBANENERGO
+KUZB,Financials,Banks,KUZNETSKY BANK PUB
+KZMS,,,KRASNOKAMSK METAL
+KZOS,Basic Materials,Commodity Chemicals,ORGANICHESKY SINTE
+KZOSP,Basic Materials,Commodity Chemicals,ORGANICHESKY SINTE
+LIFE,Healthcare,Pharmaceuticals,PHARMSYNTHEZ
+LKOH,Energy,Integrated Oil & Gas,LUKOIL
+LNTA,Consumer Non-Cyclicals,Food Retail & Distribution,LENTA LTD
+LNZL,Basic Materials,Gold,LENZOLOTO
+LNZLP,Basic Materials,Gold,LENZOLOTO
+LPSB,Utilities,Electric Utilities,LIPETSK POWER SALE
+LSNG,Utilities,Electric Utilities,LENENERGO
+LSNGP,Utilities,Electric Utilities,LENENERGO
+LSRG,Financials,Real Estate Development & Operations,LSR GROUP
+LVHK,Technology,Office Equipment,LEVENHUK AO
+MAGEP,Utilities,Electric Utilities,MAGADANENERGO
+MAGN,Basic Materials,Steel,MAGNITOGORSK IRON&
+MERF,,,MERIDIAN PUB JOINT
+MFGS,Energy,Oil & Gas Exploration and Production,SLAVNEFT MEGIONEFT
+MFGSP,Energy,Oil & Gas Exploration and Production,SLAVNEFT MEGIONEFT
+MFON,Telecommunications Services,Wireless Telecommunications Services,MEGAFON
+MGNT,Consumer Non-Cyclicals,Food Retail & Distribution,Magnit
+MGNZ,Basic Materials,Specialty Mining & Metals,SOLIKAMSK MAGNESIU
+MGTS,Telecommunications Services,Integrated Telecommunications Services,MOSCOW CITY TELEPH
+MGTSP,Telecommunications Services,Integrated Telecommunications Services,MOSCOW CITY TELEPH
+MGVM,Consumer Cyclicals,Entertainment Production,WAR AND PEACE MEDI
+MISB,Utilities,Electric Utilities,TNS ENERGO MARI EL
+MISBP,Utilities,Electric Utilities,TNS ENERGO MARI EL
+MOBB,Financials,Banks,MOSCOVSKIY OBLASTN
+MOEX,Financials,Financial & Commodity Market Operators,MOSCOW EXCHANGE
+MORI,Technology,Communications & Networking,MORION (PERM)
+MRKC,Utilities,Electric Utilities,IDGC CENTRE
+MRKK,Utilities,Electric Utilities,IDGC NTH CAUC
+MRKP,Utilities,Electric Utilities,IDGC CENTR & VOLGA
+MRKS,Utilities,Electric Utilities,IDGC SIBERIA
+MRKU,Utilities,Electric Utilities,MRSK URALA
+MRKV,Utilities,Electric Utilities,IDGC OF VOLGA
+MRKY,Utilities,Electric Utilities,IDGC OF SOUTH
+MRKZ,Utilities,Electric Utilities,IDGC OF NORTH WEST
+MRSB,Utilities,Electric Utilities,MORDOVIA ENERGY RE
+MSNG,Utilities,Electric Utilities,MOSENERGO
+MSRS,Utilities,Electric Utilities,MOSCOW UNITED ELEC
+MSST,Industrials,Construction & Engineering,MULTISISTEMA
+MSTT,Industrials,Construction & Engineering,MOSTOTREST
+MTLR,Basic Materials,Steel,MECHEL
+MTLRP,Basic Materials,Steel,MECHEL
+MTSS,Telecommunications Services,Wireless Telecommunications Services,MTS
+MVID,Consumer Cyclicals,Computer & Electronics Retailers,M VIDEO
+NAUK,Industrials,Aerospace & Defense,NPO NAUKA
+NFAZ,Industrials,Heavy Machinery & Vehicles,NEFAZ PTC
+NKHP,Consumer Non-Cyclicals,Food Processing,NOVOROSSIYSK GRAIN
+NKNC,Basic Materials,Commodity Chemicals,NIZHNEKAMSKNEFTEK
+NKNCP,Basic Materials,Commodity Chemicals,NIZHNEKAMSKNEFTEK
+NKSH,Consumer Cyclicals,Tires & Rubber Products,NIZHNEKAMSKSHINA C
+NLMK,Basic Materials,Steel,NOVOLIPETSK STEEL
+NMTP,Industrials,Marine Port Services,NOVOROSSIYSK COMME
+NNSB,Utilities,Electric Utilities,TNS ENERGO NN
+NNSBP,Utilities,Electric Utilities,TNS ENERGO NN
+NPOF,,,FIZIKA SCIENTIFIC
+NSVZ,Telecommunications Services,Integrated Telecommunications Services,NAUKA-TELECOM
+NVTK,Energy,Integrated Oil & Gas,NOVATEK
+OBUV,Consumer Cyclicals,Footwear,OR PUB JOINT STK C
+ODVA,Consumer Cyclicals,Broadcasting,MEDIAHOLDING
+OGKB,Utilities,Electric Utilities,OGK-2
+OMZZP,Industrials,Industrial Machinery & Equipment,UNITED HEAVY MACH
+OPIN,Financials,Real Estate Development & Operations,INGRAD
+PAZA,Industrials,Heavy Machinery & Vehicles,PAVLOVO BUS
+PHOR,Basic Materials,Agricultural Chemicals,PHOSAGRO
+PIKK,Consumer Cyclicals,Homebuilding,PIK GROUP
+PLSM,Industrials,Industrial Machinery & Equipment,PLASMEQ
+PLZL,Basic Materials,Gold,POLYUS
+PMSB,Utilities,Electric Utilities,PERM ENERGY SUPPLY
+PMSBP,Utilities,Electric Utilities,PERM ENERGY SUPPLY
+POLY,Basic Materials,Integrated  Mining,POLYMETAL INTL PLC
+PRFN,Consumer Cyclicals,Construction Supplies & Fixtures,CHELYABINSK PLANT
+PRMB,Financials,Banks,PRIMORYE COMM BANK
+PRTK,Consumer Non-Cyclicals,Drug Retailers,PROTEK
+QIWI,Industrials,Business Support Services,QIWI PLC
+RASP,Energy,Coal,RASPADSKAYA
+RAVN,Financials,Real Estate Development & Operations,RAVEN PROPERTY GRP
+RBCM,Industrials,Professional Information Services,RBC
+RDRB,,,ROSDORBANK
+RGSS,Financials,Multiline Insurance & Brokers,ROSGOSSTRAKH INS
+RKKE,Industrials,Aerospace & Defense,ENERGIA ROCKET AND
+RLMN,Industrials,Industrial Conglomerates,ROLLMAN GROUP
+RLMNP,Industrials,Industrial Conglomerates,ROLLMAN GROUP
+RNFT,Energy,Oil & Gas Exploration and Production,RUSSNEFT
+ROLO,Basic Materials,Specialty Mining & Metals,RUSOLOVO
+ROSB,Financials,Banks,ROSBANK
+ROSN,Energy,Integrated Oil & Gas,ROSNEFT OIL CO
+ROST,Consumer Cyclicals,Restaurants & Bars,ROSINTER RESTAURAN
+RSTI,Utilities,Electric Utilities,ROSSETI
+RSTIP,Utilities,Electric Utilities,ROSSETI
+RTGZ,Utilities,Natural Gas Utilities,GAZPROM GA ROSTOV-
+RTKM,Telecommunications Services,Integrated Telecommunications Services,ROSTELECOM
+RTKMP,Telecommunications Services,Integrated Telecommunications Services,ROSTELECOM
+RTSB,Utilities,Electric Utilities,TNS ENERGO ROSTOV
+RTSBP,Utilities,Electric Utilities,TNS ENERGO ROSTOV
+RUAL,Basic Materials,Aluminum,United Company RUSAL PLC
+RUGR,Consumer Non-Cyclicals,Fishing & Farming,RUSGRAIN HOLDING
+RUSI,Financials,Investment Banking & Brokerage Services,INVESTMENT CO IC
+RUSP,Basic Materials,Steel,RUSPOLYMET
+RZSB,Utilities,Electric Utilities,RYAZANENERGOSBYT
+SAGO,Utilities,Electric Utilities,SAMARAENERGO
+SAGOP,Utilities,Electric Utilities,SAMARAENERGO
+SARE,Utilities,Electric Utilities,SARATOVENERGO
+SAREP,Utilities,Electric Utilities,SARATOVENERGO
+SBER,Financials,Banks,SBERBANK
+SBERP,Financials,Banks,SBERBANK OF RUSSIA
+SELG,Basic Materials,Gold,SELIGDAR
+SELGP,Basic Materials,Gold,SELIGDAR
+SFIN,Financials,Corporate Financial Services,SAFMAR FINL INV
+SIBG,Consumer Non-Cyclicals,Food Processing,SIBERIAN GOSTINEC
+SIBN,Energy,Integrated Oil & Gas,GAZPROM NEFT
+SLEN,Utilities,Electric Utilities,SAKHALINENERGO
+SNGS,Energy,Integrated Oil & Gas,SURGUTNEFTEGAS PJS
+SNGSP,Energy,Integrated Oil & Gas,SURGUTNEFTEGAS PJS
+STSB,Utilities,Electric Utilities,STAVROPOLENERGOSBY
+STSBP,Utilities,Electric Utilities,STAVROPOLENERGOSBY
+SVAV,Consumer Cyclicals,Auto & Truck Manufacturers,SOLLERS
+SZPR,Industrials,Marine Freight & Logistics,NORTH-WESTERN SHIP
+TANL,Industrials,Aerospace & Defense,TANTAL
+TASB,Utilities,Electric Utilities,TAMBOV POWER SUPPL
+TASBP,Utilities,Electric Utilities,TAMBOV POWER SUPPL
+TATN,Energy,Integrated Oil & Gas,TATNEFT
+TATNP,Energy,Integrated Oil & Gas,TATNEFT
+TGKA,Utilities,Electric Utilities,TGC-1
+TGKB,Utilities,Multiline Utilities,TERRITORIAL GENER
+TGKBP,Utilities,Multiline Utilities,TERRITORIAL GENER
+TGKD,Utilities,Electric Utilities,QUADRA-POWER GENER
+TGKDP,Utilities,Electric Utilities,QUADRA-POWER GENER
+TGKN,Utilities,Water Utilities,TGC-14
+TNSE,Utilities,Electric Utilities,TNS ENERGO PUBLIC
+TORS,Utilities,Electric Utilities,TOMSK DISTRIBUTION
+TORSP,Utilities,Electric Utilities,TOMSK DISTRIBUTION
+TRCN,Industrials,Ground Freight & Logistics,TRANSCONTAINER
+TRFM,,,TRANSFIN-M PUB CO
+TRMK,Basic Materials,Steel,TMK PAO
+TRNFP,Energy,Oil & Gas Transportation Services,TRANSNEFT
+TTLK,Telecommunications Services,Integrated Telecommunications Services,TATTELECOM
+TUCH,Basic Materials,Construction Materials,TUCHKOVSKIY COMPL
+TUZA,Industrials,Heavy Machinery & Vehicles,TUIMAZINSKIY ZAVOD
+UCSS,,,UNITED CREDIT SYS
+UKUZ,Energy,Coal,SOUTHERN KUZBASS C
+UNAC,Industrials,Aerospace & Defense,UNITED AIRCRAFT CO
+UNKL,Basic Materials,Specialty Mining & Metals,SOUTHERN URALS NIC
+UPRO,Utilities,Electric Utilities,UNIPRO
+URKA,Basic Materials,Agricultural Chemicals,URALKALI
+URKZ,Basic Materials,Steel,URALS STAMPINGS
+USBN,Financials,Banks,BANK URALSIB
+UTAR,Industrials,Airlines,UTAIR AVIATION
+UTSY,,,UNIFORM TECHNO SYS
+UWGN,Industrials,Heavy Machinery & Vehicles,UNITED WAGON COMPA
+VDSB,Utilities,Electric Utilities,VLADIMIR POWER SAL
+VGSB,Utilities,Electric Utilities,VOLGOGRADENERGOSBY
+VGSBP,Utilities,Electric Utilities,VOLGOGRADENERGOSBY
+VJGZ,Energy,Oil & Gas Exploration and Production,VARYOGANNEFTEGAZ P
+VJGZP,Energy,Oil & Gas Exploration and Production,VARYOGANNEFTEGAZ P
+VLHZ,Basic Materials,Commodity Chemicals,VLADIMIR CHEMICAL
+VRSB,Utilities,Electric Utilities,TNS ENERGO VORONEZ
+VRSBP,Utilities,Electric Utilities,TNS ENERGO VORONEZ
+VSMO,Basic Materials,Specialty Mining & Metals,VSMPO-AVISMA CORPO
+VSYD,Industrials,Shipbuilding,VYBORG SHIPYARD P
+VSYDP,Industrials,Shipbuilding,VYBORG SHIPYARD P
+VTBR,Financials,Banks,VTB
+VZRZ,Financials,Banks,VOZROZHDENIE BANK
+VZRZP,Financials,Banks,VOZROZHDENIE BANK
+WTCM,Financials,Real Estate Development & Operations,WORLD TRADE CENTER
+WTCMP,Financials,Real Estate Development & Operations,WORLD TRADE CENTER
+YAKG,Energy,Oil & Gas Exploration and Production,YAKUTSK FUEL & ENE
+YKEN,Utilities,Electric Utilities,YAKUTSKENERGO
+YKENP,Utilities,Electric Utilities,YAKUTSKENERGO
+YNDX,Technology,Internet Services,YANDEX N.V
+YRSB,Utilities,Electric Utilities,TNS ENERGO YAROSAV
+YRSBP,Utilities,Electric Utilities,TNS ENERGO YAROSAV
+ZILL,Industrials,Heavy Machinery & Vehicles,LIKHACHOV PLANT PJ
+ZVEZ,Industrials,Heavy Electrical Equipment,ZVEZDA

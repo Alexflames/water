@@ -54,6 +54,9 @@ class Vector:
         self.comp[key] = value
         
     def __eq__(self, other):
+        if len(self.comp) != len(other.comp):
+            print("Количество компонент векторов при сравнении не совпадает")
+            return Vector([])
         for i in range(len(self.comp)):
             if self[i] != other[i]:
                 return False
@@ -66,6 +69,9 @@ class Vector:
         return Vector(list(map(lambda x: -x, self.comp)))
 
     def __add__(self, other):
+        if len(self.comp) != len(other.comp):
+            print("Количество компонент векторов при сложении не совпадает")
+            return Vector([])
         new_vector = Vector([])
         for i in range(len(self.comp)):
             new_vector.comp.append(self[i] + other[i])
@@ -75,6 +81,9 @@ class Vector:
         if isinstance(other, int) or isinstance(other, float):
             return Vector(list(map(lambda x: x * other, self.comp)))
         else:
+            if len(self.comp) != len(other.comp):
+                print("Количество компонент векторов при умножении не совпадает")
+                return Vector([])
             new_vector = Vector([])
             for i in range(len(self.comp)):
                 new_vector.comp.append(self[i] * other[i])
@@ -101,6 +110,8 @@ class Vector:
     @staticmethod
     def collinear(v1, v2):
         return v1.normalize() == v2.normalize()
+
+import t21graphGrigoriev as GGraph
         
 v1 = Vector([3,4,5])
 v2 = Vector([3,4,5])
@@ -116,5 +127,9 @@ print(Vector.collinear(v1, v3))
 print(v1 + v2)
 print(v1 * v2)
 print(v1 * 5)
+print("-------------------------------------------")
+print("--------------Работа с графами-------------")
+print("-------------------------------------------")
+GGraph.run_tests()
         
 

@@ -45,7 +45,6 @@ class Graph:
     def __setitem__(self, key, value):
         self.graph[str(key)] = value
 
-# не доделано
     @staticmethod
     def inverse(graph):
         new_graph = GraphNonOriented()
@@ -212,38 +211,41 @@ class GraphWeighted(GraphNonOriented):
                 was_addition = 1
 
         return new_graph
-            
+
+def run_tests():
+    graph = GraphOriented()
+    graph.from_file()
+    nograph = GraphNonOriented()
+    nograph.from_file()
+    print("Работа с ориентированным графом:")
+    print("Граф:", graph.graph)
+    print("Количество компонент связности:", graph.bfs('1')[0])
+    print("Сильно связный:", graph.is_strong_connected())
+    print("Слабо связный:", graph.is_weak_connected())
+    print("Работа с неориентированным графом:")
+    print(nograph.graph)
+    print("Является ли граф связным?", nograph.is_connected())
+    print("Сколько компонент в графе?", nograph.components_count())
+    print("Является ли граф двудольным?", nograph.is_bipartite())
+    print("Является ли граф полным?", nograph.is_full())
+    print("Кратчайший путь между 4 и 2: ", nograph.shortest_route('4', '2'))
+    fullgraph = GraphNonOriented('GGraphFull.txt')
+    fullgraph.from_file()
+    print("Работа с полным графом:")
+    print(fullgraph.graph)
+    print("Граф полный?", fullgraph.is_full())
+    print("Степень вершины 2 полного графа:", fullgraph.deg('2'))
+    print("Дополнение графа 2:")
+    print(Graph.inverse(nograph).graph)
+    print("Дополнение полного графа:")
+    print(Graph.inverse(fullgraph).graph)
+    weightedgraph = GraphWeighted()
+    weightedgraph.from_file()
+    print("Взвешенный граф:", weightedgraph)
+    minimum_tree = weightedgraph.prim()
+    print("Минимальное дерево:", minimum_tree)
+    print("Кратчайший путь между 3 и 1: ", weightedgraph.shortest_route('3', '1'))
         
     
-graph = GraphOriented()
-graph.from_file()
-nograph = GraphNonOriented()
-nograph.from_file()
-print("Работа с ориентированным графом:")
-print("Граф:", graph.graph)
-print("Количество компонент связности:", graph.bfs('1'))
-print("Сильно связный:", graph.is_strong_connected())
-print("Слабо связный:", graph.is_weak_connected())
-print("Работа с неориентированным графом:")
-print(nograph.graph)
-print(nograph.is_connected())
-print(nograph.components_count())
-print(nograph.is_bipartite())
-print(nograph.is_full())
-print("Кратчайший путь между 4 и 2: ", nograph.shortest_route('4', '2'))
-fullgraph = GraphNonOriented('GGraphFull.txt')
-fullgraph.from_file()
-print("Работа с полным графом:")
-print(fullgraph.graph)
-print("Граф полный?", fullgraph.is_full())
-print("Степень вершины 2 полного графа:", fullgraph.deg('2'))
-print("Дополнение графа 2:")
-print(Graph.inverse(nograph).graph)
-print("Дополнение полного графа:")
-print(Graph.inverse(fullgraph).graph)
-weightedgraph = GraphWeighted()
-weightedgraph.from_file()
-print("Взвешенный граф:", weightedgraph)
-minimum_tree = weightedgraph.prim()
-print("Минимальное дерево:", minimum_tree)
+
         
