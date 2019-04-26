@@ -44,37 +44,50 @@ if __name__ == "__main__":
                 split_row = row[0].split(';')
                 for j in range(len(split_row)):
                     if j != 0:
-                        d[i-1].append(float(split_row[j]))
+                        #временная мера
+                        if i != j:
+                            new_num = float(split_row[j])*100 - 80
+                        else:
+                            new_num = 0
+                        d[i-1].append(new_num)
                     
             i = i + 1
 
 import scipy.spatial.distance as ssd
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import minimum_spanning_tree
+import networkx as nx
+
+X = csr_matrix(d)
+Tcsr = minimum_spanning_tree(X).toarray()
+plt.figure()
+T = nx.Graph()
+T.add_nodes_from(range(1, 122))
+T.add_edges_from(Tcsr)
+nx.draw_networkx(T)
+plt.show()
+
+
 # convert the redundant n*n square matrix form into a condensed nC2 array
 # distArray[{n choose 2}-{n-i choose 2} + (j-i-1)] is the distance between
 #   points i and j
-distArray = ssd.squareform(d) 
+##distArray = ssd.squareform(d) 
 
-##X = np.array([[5,3],  
-##    [10,15],
-##    [15,12],
-##    [24,10],
-##    [30,30],
-##    [85,70],
-##    [71,80],
-##    [60,78],
-##    [70,55],
-##    [80,91],])
+##single : mimimum, complete : maximum, average, centroid
+##linked = linkage(distArray, 'complete')
 ##
-linked = linkage(distArray, 'single')
+##labelList = range(1, 122)
+##
+##plt.figure(figsize=(15, 9))  
+##dendrogram(linked,  
+##            orientation='top',
+##            labels=labelList,
+##            distance_sort='ascending',
+##            show_leaf_counts=True,
+##           above_threshold_color='#666666')
+##plt.ylabel('distance(norm)')
+##plt.title('Hierarchical Clustering Dendrogram')
+##plt.show()
 
-labelList = range(1, 124)
 
-plt.figure(figsize=(15, 9))  
-dendrogram(linked,  
-            orientation='top',
-            labels=labelList,
-            distance_sort='ascending',
-            show_leaf_counts=True,
-           above_threshold_color='#444444')
-plt.show()
 
