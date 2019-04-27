@@ -58,13 +58,31 @@ from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import minimum_spanning_tree
 import networkx as nx
 
+sector_color = {'Utilities': '#FF7400', 'Energy': '#FFF100',
+                'Consumer Non-Cyclicals':'#CD0074',
+                'Telecommunications Services':'#009A9A',
+                'Basic Materials':'#0D58A7',
+                'Consumer Cyclicals':'#819F00',
+                'Healthcare':'#E668AF',
+                'Financials':'#A67777',
+                'Industrials':'#CCCCCC',
+                'Technology':'#35D5A4'}
+
 X = csr_matrix(d)
 Tcsr = minimum_spanning_tree(X).toarray()
-plt.figure()
+plt.figure(figsize=(15, 9))
 T = nx.Graph()
 T.add_nodes_from(range(1, 122))
-T.add_edges_from(Tcsr)
-nx.draw_networkx(T)
+##for i in range(len(Tcsr)):
+##    T.add_node(i + 1)
+for i in range(len(Tcsr)):
+    for j in range(len(Tcsr[i])):
+        if Tcsr[i][j] != 0:
+            #print(i, j, Tcsr[i][j])
+            T.add_edge(i + 1, j + 1, weight=Tcsr[i][j])
+nc = [sector_color.get(label_info[index_label[i]][0], '#24AF24')
+      for i in range(len(T.nodes()))]
+nx.draw_networkx(T, node_color = nc)
 plt.show()
 
 
