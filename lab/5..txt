@@ -1,0 +1,18 @@
+5.
+...
+
+
+\subsection{Hierarchical Tree}
+Clustering algorithms can be used on average distance matrix to group stocks which prices correlate and to separate rest. Multiple definitions for distance between clusters can be used. Since the core value for clustering algorithm depends on its calculation, we use all four of them. The distance $d_{a,b}$ between two clusters $c_a$ and $c_b$ is defined as minimum, maximum and average for all pairs $(o_a, o_b)$ from $c_a$ and $c_b$ respectively or as distance between their centroids[1-4].
+
+1.
+2..
+3..
+4..
+
+The Russian stock market has ... A normalised distance $d{_norm}_a$,b shown in equation [5] is introduced to stress the difference between stock correlations, which results in a more correct clustering of a hierarchical tree. We create four hierarchical trees [6-9] each using its own normalised distance definition. Dendogram function from scipy package is used to draw them on a plot from matplotlib package. In the trees, each leaf node indicates the stock of a particular company with its ticket as a label. The height of where two stocks connect shows how they correlate. The lower the branches of similar clusters or stocks merge the more positive correlation there is between them. We set color threshold of $0.7 * max(d_norm)$ to highlight clusters below this value. The companies in colored branches are mostly from same economy sectors which means that hierarchical trees can show economy sectors from price correlation matrix alone.
+
+\subsection{Minimum Spanning Tree}
+IMOEX network, based on average distance matrix, can be simplified by extracting edges with minimal distance while maintaining graph connectivity. Connected graph with N vertices can be converted into the graph with N-1 edges without loops with minimum total length of edges or minimum spanning tree (MST). We use Python Scipy minimum spanning tree algorithm on an average distance matrix [5.0]. Networkx python package is used to get its graphic representation on a Matplotlib plot. 
+
+MST reveals the core stocks for IMOEX ... Top 10 stocks are shown in the table []. 

@@ -3,16 +3,8 @@ import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage
 
 import csv
- 
-def csv_reader(file_obj):
-    """
-    Read a csv file
-    """
-    reader = csv.reader(file_obj)
-    for row in reader:
-        print(" ".join(row))
         
-# отображение: код -> сектор, название
+# mapping: ticket -> (sector, name)
 
 label_info = dict()
 if __name__ == "__main__":
@@ -22,7 +14,7 @@ if __name__ == "__main__":
         for row in reader:
             label_info[row[0]] = [row[1], row[3]]
 
-# отображение: индекс -> код
+# mapping: index -> ticket
 index_label = dict()
 
 d = []
@@ -33,20 +25,20 @@ if __name__ == "__main__":
         reader = csv.reader(f_obj)
         i = 0
         for row in reader:
-            # Связь индексов с кодами в первой строке
+            # index - ticket connection
             if i == 0:
                 split_row = row[0].split(';')
                 for j in range(len(split_row)):
-                    if j != 0: # индекс 0 - пустая ячейка
-                        index_label[j-1] = split_row[j]
+                    if j != 0: # index 0 contains company ticket
+                        index_label[j] = split_row[j]
             else:
                 d.append([])
                 split_row = row[0].split(';')
                 for j in range(len(split_row)):
                     if j != 0:
-                        #временная мера
+                        #normalization
                         if i != j:
-                            new_num = float(split_row[j])*100 - 80
+                            new_num = float(split_row[j]) - 0.5
                         else:
                             new_num = 0
                         d[i-1].append(new_num)
@@ -58,31 +50,34 @@ from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import minimum_spanning_tree
 import networkx as nx
 
-sector_color = {'Utilities': '#FF7400', 'Energy': '#FFF100',
-                'Consumer Non-Cyclicals':'#CD0074',
-                'Telecommunications Services':'#009A9A',
-                'Basic Materials':'#0D58A7',
-                'Consumer Cyclicals':'#819F00',
-                'Healthcare':'#E668AF',
-                'Financials':'#A67777',
-                'Industrials':'#CCCCCC',
-                'Technology':'#35D5A4'}
+sector_color = {'Utilities': '#FF7400', #orange
+                'Energy': '#FFF100', #yellow
+                'Consumer Non-Cyclicals':'#CD0074', #dark pink
+                'Telecommunications Services':'#33CCCC', #light green
+                'Basic Materials':'#3E97D1', #dark blue
+                'Consumer Cyclicals':'#819F00', #light green
+                'Healthcare':'#E668AF', #light pink
+                'Financials':'#A67777', #light brown-red
+                'Industrials':'#CCCCCC', #light gray
+                'Technology':'#B4ACE3' #dark blue-pink
+                }
 
 X = csr_matrix(d)
 Tcsr = minimum_spanning_tree(X).toarray()
-plt.figure(figsize=(15, 9))
+plt.figure(figsize=(9, 8))
 T = nx.Graph()
 T.add_nodes_from(range(1, 122))
-##for i in range(len(Tcsr)):
-##    T.add_node(i + 1)
 for i in range(len(Tcsr)):
     for j in range(len(Tcsr[i])):
         if Tcsr[i][j] != 0:
             #print(i, j, Tcsr[i][j])
             T.add_edge(i + 1, j + 1, weight=Tcsr[i][j])
+
 nc = [sector_color.get(label_info[index_label[i]][0], '#24AF24')
-      for i in range(len(T.nodes()))]
-nx.draw_networkx(T, node_color = nc)
+      for i in range(1, len(T.nodes()) + 1)]
+nx.draw_networkx(T, node_color = nc, labels=index_label, width=0.4,
+                 font_family='sans-serif', font_weight='light',
+                 font_size=7, node_size=100)
 plt.show()
 
 
@@ -90,21 +85,23 @@ plt.show()
 # distArray[{n choose 2}-{n-i choose 2} + (j-i-1)] is the distance between
 #   points i and j
 ##distArray = ssd.squareform(d) 
-
-##single : mimimum, complete : maximum, average, centroid
-##linked = linkage(distArray, 'complete')
 ##
-##labelList = range(1, 122)
+###single : minimum, complete : maximum, average, centroid
+##distance_definition = 'centroid'
+##linked = linkage(distArray, distance_definition)
+##labelList = [index_label[i] for i in range(1, 122)]
 ##
-##plt.figure(figsize=(15, 9))  
+##plt.figure(figsize=(9, 8))  
 ##dendrogram(linked,  
 ##            orientation='top',
 ##            labels=labelList,
 ##            distance_sort='ascending',
 ##            show_leaf_counts=True,
-##           above_threshold_color='#666666')
-##plt.ylabel('distance(norm)')
+##           above_threshold_color='#222222')
+##plt.ylabel('normalised distance')
 ##plt.title('Hierarchical Clustering Dendrogram')
+##ax = plt.gca()
+##ax.set_facecolor((0.95, 0.95, 0.95))
 ##plt.show()
 
 
