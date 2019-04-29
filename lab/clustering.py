@@ -66,12 +66,12 @@ X = csr_matrix(d)
 Tcsr = minimum_spanning_tree(X).toarray()
 plt.figure(figsize=(9, 8))
 T = nx.Graph()
-T.add_nodes_from(range(1, 122))
+T.add_nodes_from(range(1, len(d) + 1))
 for i in range(len(Tcsr)):
     for j in range(len(Tcsr[i])):
         if Tcsr[i][j] != 0:
-            #print(i, j, Tcsr[i][j])
             T.add_edge(i + 1, j + 1, weight=Tcsr[i][j])
+
 
 nc = [sector_color.get(label_info[index_label[i]][0], '#24AF24')
       for i in range(1, len(T.nodes()) + 1)]
