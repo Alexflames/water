@@ -1,0 +1,195 @@
+Ticker,Sector,Industry,Title,Cap
+ABRD,Consumer Non-Cyclicals,Distillers & Wineries,ABRAU-DURSO,13.72B
+AFKS,Telecommunications Services,Integrated Telecommunications Services,SISTEMA PJSFC,84.36B
+AFLT,Industrials,Airlines,AEROFLOT,102.77B
+AKRN,Basic Materials,Agricultural Chemicals,ACRON,176.38B
+ALNU,Basic Materials,Precious Metals & Minerals,ALROSA-NYURBA,51.52B
+ALRS,Basic Materials,Precious Metals & Minerals,ALROSA,681.24B
+AMEZ,Basic Materials,Steel,ASHINSKIY METALLUR,2.06B
+APTK,Consumer Non-Cyclicals,Drug Retailers,PHARMACY CHAIN 36,37.63B
+AQUA,Consumer Non-Cyclicals,Food Processing,RUSSIAN AQUACULTUR,17.52B
+ARMD,Technology,IT Services & Consulting,ARMADA,115.34M
+ARSA,Financials,Investment Management & Fund Operators,ARSAGERA ASSET MGM,350.4M
+ASSB,Utilities,Electric Utilities,ASTRAKHAN POWER SA,709.28M
+BANE,Energy,Integrated Oil & Gas,BASHNEFT,357.76B
+BANEP,Energy,Integrated Oil & Gas,BASHNEFT,351.48B
+BELU,Consumer Non-Cyclicals,Distillers & Wineries,BELUGA GROUP,6.7B
+BLNG,Energy,Coal,BELON,4.77B
+BRZL,Basic Materials,Gold,BURYATZOLOTO,6.1B
+BSPB,Financials,Banks,BANK ST PETERSBURG,28.01B
+CHEP,Basic Materials,Steel,CHELYABINSK PIPE,46.32B
+CHGZ,Financials,Real Estate Development & Operations,RN-WESTERN SIBERIA,776.37M
+CHKZ,Consumer Cyclicals,"Auto, Truck & Motorcycle Parts",CHELYABINSK FORGE&,2.51B
+CHMF,Basic Materials,Steel,SEVERSTAL,867.22B
+CHMK,Basic Materials,Steel,CHELYABINSK MET PL,8.81B
+CLSB,Utilities,Electric Utilities,CHELYABINSK POWER,532.29M
+CNTL,Telecommunications Services,Integrated Telecommunications Services,CENTRAL TELEGRAPH,3.51B
+CNTLP,Telecommunications Services,Integrated Telecommunications Services,CENTRAL TELEGRAPH,3.81B
+DASB,Energy,N/A,DAGESTAN ENERGY SU,608.06M
+DIOD,Healthcare,Pharmaceuticals,DIOD,418.16M
+DVEC,Utilities,Electric Utilities,FAR EASTERN ENERGY,19.68B
+DZRD,Industrials,Electrical Components & Equipment,DONSKOY FACTORY OF,779.53M
+ELTZ,Basic Materials,Specialty Mining & Metals,ELECTROZINK,340.55M
+ENRU,Utilities,Electric Utilities,ENEL RUSSIA,37.83B
+FEES,Utilities,Electric Utilities,FSK EES,208.03B
+FESH,Industrials,Marine Freight & Logistics,FAR-EASTERN SHIPPI,19.46B
+GAZA,Consumer Cyclicals,Auto & Truck Manufacturers,GAZ PUBLIC JOINT,7.93B
+GAZP,Energy,Integrated Oil & Gas,GAZPROM,3.62T
+GCHE,Consumer Non-Cyclicals,Fishing & Farming,CHERKIZOVO GROUP,69.12B
+GMKN,Basic Materials,Specialty Mining & Metals,MMC NORILSK NICKEL,22.94T
+HALS,Consumer Cyclicals,Homebuilding,HALS-DEVELOPMENT,8.34B
+HYDR,Utilities,Electric Utilities,RUSHYDRO,227.02B
+IGST,Basic Materials,Steel,IZHSTAL PAO PUBIC,581.33M
+IRAO,Utilities,Electric Utilities,INTER RAO UES,292.66B
+IRGZ,Utilities,Electric Utilities,IRKUTSKENERGO,69.96B
+IRKT,Industrials,Aerospace & Defense,IRKUT CORPORATION,51.57B
+ISKJ,Healthcare,Biotechnology & Medical Research,HUMAN STEM CELLS,691.14M
+JNOS,Energy,Oil & Gas Refining and Marketing,SLAVNEFT YAROSLAVN,20.88B
+KAZT,Basic Materials,Specialty Chemicals,KUIBYSHEVAZOT,23.92B
+KBSB,Utilities,Electric Utilities,TNS ENERGO KUBAN,2.36B
+KBTK,Energy,Coal,KUZBASSKAYA TOP CO,20.11B
+KCHE,Utilities,Electric Utilities,KAMCHATSKENERGO P,5.88B
+KLSB,Utilities,Electric Utilities,KALUGA POWER SALE,895.4M
+KMAZ,Industrials,Heavy Machinery & Vehicles,KAMAZ PTC,37.93B
+KMEZ,Industrials,Industrial Machinery & Equipment,KOVROV MECHANICAL,1.75B
+KOGK,Basic Materials,Steel,KORSHYNOV MINING,13.26B
+KRKN,Energy,Oil & Gas Refining and Marketing,SARATOV OIL REFINE,5.16B
+KROT,Consumer Non-Cyclicals,Food Processing,KRASNYJ OCTYABR,2.83B
+KRSB,Utilities,Electric Utilities,KRASNOYARSKENERGOS,2.41B
+KTSB,Utilities,Electric Utilities,KOSTROMSKAYA SBYTO,450.14M
+KUBE,Utilities,Electric Utilities,KUBANENERGO,20.84B
+KUZB,Financials,Banks,KUZNETSKY BANK PUB,243.71M
+KZOS,Basic Materials,Commodity Chemicals,ORGANICHESKY SINTE,183.15B
+KZOSP,Basic Materials,Commodity Chemicals,ORGANICHESKY SINTE,183.97B
+LIFE,Healthcare,Pharmaceuticals,PHARMSYNTHEZ,1.76B
+LKOH,Energy,Integrated Oil & Gas,LUKOIL,3.78T
+LNZL,Basic Materials,Gold,LENZOLOTO,6.35B
+LNZLP,Basic Materials,Gold,LENZOLOTO,6.34B
+LPSB,Utilities,Electric Utilities,LIPETSK POWER SALE,1.06B
+LSNG,Utilities,Electric Utilities,LENENERGO,58.01B
+LSNGP,Utilities,Electric Utilities,LENENERGO,59.12B
+LSRG,Financials,Real Estate Development & Operations,LSR GROUP,335.45B
+LVHK,Technology,Office Equipment,LEVENHUK AO,403.4M
+MAGN,Basic Materials,Steel,MAGNITOGORSK IRON&,494.18B
+MFGS,Energy,Oil & Gas Exploration and Production,SLAVNEFT MEGIONEFT,50.51B
+MFGSP,Energy,Oil & Gas Exploration and Production,SLAVNEFT MEGIONEFT,51.24B
+MFON,Telecommunications Services,Wireless Telecommunications Services,MEGAFON,313.4B
+MGNT,Consumer Non-Cyclicals,Food Retail & Distribution,Magnit,358.35B
+MGNZ,Basic Materials,Specialty Mining & Metals,SOLIKAMSK MAGNESIU,1.19B
+MGTS,Telecommunications Services,Integrated Telecommunications Services,MOSCOW CITY TELEPH,151.45B
+MGTSP,Telecommunications Services,Integrated Telecommunications Services,MOSCOW CITY TELEPH,152.48B
+MGVM,Consumer Cyclicals,Entertainment Production,WAR AND PEACE MEDI,23.93M
+MISB,Utilities,Electric Utilities,TNS ENERGO MARI EL,1.06B
+MOBB,Financials,Banks,MOSCOVSKIY OBLASTN,8.06B
+MRKC,Utilities,Electric Utilities,IDGC CENTRE,12.79B
+MRKK,Utilities,Electric Utilities,IDGC NTH CAUC,21.1B
+MRKP,Utilities,Electric Utilities,IDGC CENTR & VOLGA,31.08B
+MRKS,Utilities,Electric Utilities,IDGC SIBERIA,19.89B
+MRKU,Utilities,Electric Utilities,MRSK URALA,15.23B
+MRKV,Utilities,Electric Utilities,IDGC OF VOLGA,19.58B
+MRKY,Utilities,Electric Utilities,IDGC OF SOUTH,4.84B
+MRKZ,Utilities,Electric Utilities,IDGC OF NORTH WEST,5.23B
+MRSB,Utilities,Electric Utilities,MORDOVIA ENERGY RE,527.26M
+MSNG,Utilities,Electric Utilities,MOSENERGO,89.6B
+MSRS,Utilities,Electric Utilities,MOSCOW UNITED ELEC,33.95B
+MSST,Industrials,Construction & Engineering,MULTISISTEMA,184.3M
+MSTT,Industrials,Construction & Engineering,MOSTOTREST,26.42B
+MTLR,Basic Materials,Steel,MECHEL,14.16B
+MTLRP,Basic Materials,Steel,MECHEL,21.94B
+MTSS,Telecommunications Services,Wireless Telecommunications Services,MTS,239.62B
+MVID,Consumer Cyclicals,Computer & Electronics Retailers,M VIDEO,74.49B
+NFAZ,Industrials,Heavy Machinery & Vehicles,NEFAZ PTC,707.42M
+NKNC,Basic Materials,Commodity Chemicals,NIZHNEKAMSKNEFTEK,117.04B
+NKNCP,Basic Materials,Commodity Chemicals,NIZHNEKAMSKNEFTEK,115.79B
+NKSH,Consumer Cyclicals,Tires & Rubber Products,NIZHNEKAMSKSHINA C,854M
+NLMK,Basic Materials,Steel,NOVOLIPETSK STEEL,102.71B
+NMTP,Industrials,Marine Port Services,NOVOROSSIYSK COMME,134B
+NNSB,Utilities,Electric Utilities,TNS ENERGO NN,7.44B
+NSVZ,Telecommunications Services,Integrated Telecommunications Services,NAUKA-TELECOM,350.86M
+NVTK,Energy,Integrated Oil & Gas,NOVATEK,362.16B
+ODVA,Consumer Cyclicals,Broadcasting,MEDIAHOLDING,130.76M
+OGKB,Utilities,Electric Utilities,OGK-2,42.48B
+OPIN,Financials,Real Estate Development & Operations,INGRAD,31.74B
+PAZA,Industrials,Heavy Machinery & Vehicles,PAVLOVO BUS,2.9B
+PHOR,Basic Materials,Agricultural Chemicals,PHOSAGRO,305.62B
+PIKK,Consumer Cyclicals,Homebuilding,PIK GROUP,242.47B
+PLSM,Industrials,Industrial Machinery & Equipment,PLASMEQ,13.32M
+PLZL,Basic Materials,Gold,POLYUS,668.64B
+PMSB,Utilities,Electric Utilities,PERM ENERGY SUPPLY,3.29B
+PMSBP,Utilities,Electric Utilities,PERM ENERGY SUPPLY,3.24B
+PRFN,Consumer Cyclicals,Construction Supplies & Fixtures,CHELYABINSK PLANT,1.21B
+PRTK,Consumer Non-Cyclicals,Drug Retailers,PROTEK,45.91B
+RASP,Energy,Coal,RASPADSKAYA,96B
+RBCM,Industrials,Professional Information Services,RBC,1.33B
+RKKE,Industrials,Aerospace & Defense,ENERGIA ROCKET AND,5.88B
+RLMN,Industrials,Industrial Conglomerates,ROLLMAN GROUP,109.62M
+ROSB,Financials,Banks,ROSBANK,87.5B
+ROSN,Energy,Integrated Oil & Gas,ROSNEFT OIL CO,4.59T
+ROST,Consumer Cyclicals,Restaurants & Bars,ROSINTER RESTAURAN,1.14B
+RSTI,Utilities,Electric Utilities,ROSSETI,215.71B
+RSTIP,Utilities,Electric Utilities,ROSSETI,214.31B
+RTGZ,Utilities,Natural Gas Utilities,GAZPROM GA ROSTOV-,1.58B
+RTKM,Telecommunications Services,Integrated Telecommunications Services,ROSTELECOM,168.75B
+RTKMP,Telecommunications Services,Integrated Telecommunications Services,ROSTELECOM,167.97B
+RTSB,Utilities,Electric Utilities,TNS ENERGO ROSTOV,2.72B
+RUGR,Consumer Non-Cyclicals,Fishing & Farming,RUSGRAIN HOLDING,217.07M
+RUSI,Financials,Investment Banking & Brokerage Services,INVESTMENT CO IC,4.49B
+RUSP,Basic Materials,Steel,RUSPOLYMET,2.09B
+RZSB,Utilities,Electric Utilities,RYAZANENERGOSBYT,815.34M
+SAGO,Utilities,Electric Utilities,SAMARAENERGO,1.17B
+SARE,Utilities,Electric Utilities,SARATOVENERGO,633.44M
+SAREP,Utilities,Electric Utilities,SARATOVENERGO,617.19M
+SBER,Financials,Banks,SBERBANK,4.92T
+SBERP,Financials,Banks,SBERBANK OF RUSSIA,4.9T
+SELG,Basic Materials,Gold,SELIGDAR,5.79B
+SIBN,Energy,Integrated Oil & Gas,GAZPROM NEFT,1.71T
+SNGS,Energy,Integrated Oil & Gas,SURGUTNEFTEGAS PJS,881.16B
+SNGSP,Energy,Integrated Oil & Gas,SURGUTNEFTEGAS PJS,877.06B
+STSB,Utilities,Electric Utilities,STAVROPOLENERGOSBY,308.84M
+STSBP,Utilities,Electric Utilities,STAVROPOLENERGOSBY,313.24M
+SVAV,Consumer Cyclicals,Auto & Truck Manufacturers,SOLLERS,11.6B
+SZPR,Industrials,Marine Freight & Logistics,NORTH-WESTERN SHIP,7.99B
+TANL,Industrials,Aerospace & Defense,TANTAL,1.14B
+TASB,Utilities,Electric Utilities,TAMBOV POWER SUPPL,381.5M
+TATN,Energy,Integrated Oil & Gas,TATNEFT,1.67T
+TATNP,Energy,Integrated Oil & Gas,TATNEFT,1.71T
+TGKA,Utilities,Electric Utilities,TGC-1,33.91B
+TGKB,Utilities,Multiline Utilities,TERRITORIAL GENER,2.63B
+TGKBP,Utilities,Multiline Utilities,TERRITORIAL GENER,2.61B
+TGKD,Utilities,Electric Utilities,QUADRA-POWER GENER,6.79B
+TGKDP,Utilities,Electric Utilities,QUADRA-POWER GENER,6.76B
+TGKN,Utilities,Water Utilities,TGC-14,6.49B
+TORS,Utilities,Electric Utilities,TOMSK DISTRIBUTION,1.29B
+TORSP,Utilities,Electric Utilities,TOMSK DISTRIBUTION,1.31B
+TRCN,Industrials,Ground Freight & Logistics,TRANSCONTAINER,926.78B
+TRMK,Basic Materials,Steel,TMK PAO,16.73B
+TRNFP,Energy,Oil & Gas Transportation Services,TRANSNEFT,1.2T
+TTLK,Telecommunications Services,Integrated Telecommunications Services,TATTELECOM,4.58B
+TUCH,Basic Materials,Construction Materials,TUCHKOVSKIY COMPL,191.33M
+TUZA,Industrials,Heavy Machinery & Vehicles,TUIMAZINSKIY ZAVOD,739.8M
+UKUZ,Energy,Coal,SOUTHERN KUZBASS C,21.38B
+UNAC,Industrials,Aerospace & Defense,UNITED AIRCRAFT CO,334.92B
+UNKL,Basic Materials,Specialty Mining & Metals,SOUTHERN URALS NIC,1.51B
+UPRO,Utilities,Electric Utilities,UNIPRO,165.12B
+URKA,Basic Materials,Agricultural Chemicals,URALKALI,112.43B
+URKZ,Basic Materials,Steel,URALS STAMPINGS,4.62B
+USBN,Financials,Banks,BANK URALSIB,24.74B
+UTAR,Industrials,Airlines,UTAIR AVIATION,26.53B
+VDSB,Utilities,Electric Utilities,VLADIMIR POWER SAL,281.15M
+VGSB,Utilities,Electric Utilities,VOLGOGRADENERGOSBY,654.53M
+VJGZ,Energy,Oil & Gas Exploration and Production,VARYOGANNEFTEGAZ P,13.21B
+VLHZ,Basic Materials,Commodity Chemicals,VLADIMIR CHEMICAL,5.58B
+VRSB,Utilities,Electric Utilities,TNS ENERGO VORONEZ,2.19B
+VSMO,Basic Materials,Specialty Mining & Metals,VSMPO-AVISMA CORPO,197.29B
+VSYD,Industrials,Shipbuilding,VYBORG SHIPYARD P,3.49B
+VTBR,Financials,Banks,VTB,229.43M
+VZRZ,Financials,Banks,VOZROZHDENIE BANK,11.68B
+VZRZP,Financials,Banks,VOZROZHDENIE BANK,11.43B
+WTCM,Financials,Real Estate Development & Operations,WORLD TRADE CENTER,6.99B
+YAKG,Energy,Oil & Gas Exploration and Production,YAKUTSK FUEL & ENE,6.18B
+YKEN,Utilities,Electric Utilities,YAKUTSKENERGO,2.44B
+YKENP,Utilities,Electric Utilities,YAKUTSKENERGO,2.4B
+YRSB,Utilities,Electric Utilities,TNS ENERGO YAROSAV,3.19B
+ZILL,Industrials,Heavy Machinery & Vehicles,LIKHACHOV PLANT PJ,2.57B
+ZVEZ,Industrials,Heavy Electrical Equipment,ZVEZDA,2.67B
+YNDX,Technology,Internet Services,Yandex,790.22B

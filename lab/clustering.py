@@ -8,7 +8,7 @@ import csv
 
 label_info = dict()
 if __name__ == "__main__":
-    csv_path = "companies-v2.csv"
+    csv_path = "company-2012.csv"
     with open(csv_path, "r") as f_obj:
         reader = csv.reader(f_obj)
         for row in reader:
@@ -50,59 +50,59 @@ from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import minimum_spanning_tree
 import networkx as nx
 
-sector_color = {'Utilities': '#FF7400', #orange
-                'Energy': '#FFF100', #yellow
-                'Consumer Non-Cyclicals':'#CD0074', #dark pink
-                'Telecommunications Services':'#33CCCC', #light green
-                'Basic Materials':'#3E97D1', #dark blue
-                'Consumer Cyclicals':'#819F00', #light green
-                'Healthcare':'#E668AF', #light pink
-                'Financials':'#A67777', #light brown-red
-                'Industrials':'#CCCCCC', #light gray
-                'Technology':'#B4ACE3' #dark blue-pink
-                }
-
-X = csr_matrix(d)
-Tcsr = minimum_spanning_tree(X).toarray()
-plt.figure(figsize=(9, 8))
-T = nx.Graph()
-T.add_nodes_from(range(1, len(d) + 1))
-for i in range(len(Tcsr)):
-    for j in range(len(Tcsr[i])):
-        if Tcsr[i][j] != 0:
-            T.add_edge(i + 1, j + 1, weight=Tcsr[i][j])
-
-
-nc = [sector_color.get(label_info[index_label[i]][0], '#24AF24')
-      for i in range(1, len(T.nodes()) + 1)]
-nx.draw_networkx(T, node_color = nc, labels=index_label, width=0.4,
-                 font_family='sans-serif', font_weight='light',
-                 font_size=7, node_size=100)
-plt.show()
+##sector_color = {'Utilities': '#FF7400', #orange
+##                'Energy': '#FFF100', #yellow
+##                'Consumer Non-Cyclicals':'#CD0074', #dark pink
+##                'Telecommunications Services':'#33CCCC', #light green
+##                'Basic Materials':'#3E97D1', #dark blue
+##                'Consumer Cyclicals':'#819F00', #light green
+##                'Healthcare':'#E668AF', #light pink
+##                'Financials':'#A67777', #light brown-red
+##                'Industrials':'#CCCCCC', #light gray
+##                'Technology':'#B4ACE3' #dark blue-pink
+##                }
+##
+##X = csr_matrix(d)
+##Tcsr = minimum_spanning_tree(X).toarray()
+##plt.figure(figsize=(10, 10))
+##T = nx.Graph()
+##T.add_nodes_from(range(1, len(d) + 1))
+##for i in range(len(Tcsr)):
+##    for j in range(len(Tcsr[i])):
+##        if Tcsr[i][j] != 0:
+##            T.add_edge(i + 1, j + 1, weight=Tcsr[i][j])
+##
+##
+##nc = [sector_color.get(label_info[index_label[i]][0], '#24AF24')
+##      for i in range(1, len(T.nodes()) + 1)]
+##nx.draw_networkx(T, node_color = nc, labels=index_label, width=0.4,
+##                 font_family='sans-serif', font_weight='light',
+##                 font_size=7, node_size=100)
+##plt.show()
 
 
 # convert the redundant n*n square matrix form into a condensed nC2 array
 # distArray[{n choose 2}-{n-i choose 2} + (j-i-1)] is the distance between
 #   points i and j
-##distArray = ssd.squareform(d) 
-##
-###single : minimum, complete : maximum, average, centroid
-##distance_definition = 'centroid'
-##linked = linkage(distArray, distance_definition)
-##labelList = [index_label[i] for i in range(1, 122)]
-##
-##plt.figure(figsize=(9, 8))  
-##dendrogram(linked,  
-##            orientation='top',
-##            labels=labelList,
-##            distance_sort='ascending',
-##            show_leaf_counts=True,
-##           above_threshold_color='#222222')
-##plt.ylabel('normalised distance')
-##plt.title('Hierarchical Clustering Dendrogram')
-##ax = plt.gca()
-##ax.set_facecolor((0.95, 0.95, 0.95))
-##plt.show()
+distArray = ssd.squareform(d) 
+
+#single : minimum, complete : maximum, average, centroid
+distance_definition = 'centroid'
+linked = linkage(distArray, distance_definition)
+labelList = [index_label[i] for i in range(1, len(d) + 1)]
+
+plt.figure(figsize=(9, 8))  
+dendrogram(linked,  
+            orientation='top',
+            labels=labelList,
+            distance_sort='ascending',
+            show_leaf_counts=True,
+           above_threshold_color='#222222')
+plt.ylabel('normalised distance')
+plt.title('Hierarchical Clustering Dendrogram')
+ax = plt.gca()
+ax.set_facecolor((0.95, 0.95, 0.95))
+plt.show()
 
 
 
