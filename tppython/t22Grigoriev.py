@@ -58,24 +58,32 @@ class Quiz():
         self.label_quest_text.configure(text=self.questions[self.q_i][0])
 
         if self.questions[self.q_i][1] == 'm':
+            i = 0
             for answer in self.questions[self.q_i][2]:
                 check_value = IntVar()
+                check_value.set(-1)
                 self.variables.append(check_value)
                 check = Checkbutton(self.root,
                                     text=answer[0],
-                                    var=self.variables[len(self.variables)-1])
+                                    var=self.variables[len(self.variables)-1],
+                                    offvalue=-1,
+                                    onvalue=i)
                 check.pack()
                 self.question_widgets.append(check)
+                i = i + 1
+                #print(self.variables[len(self.variables)-1].get())
         elif self.questions[self.q_i][1] == 's':
+            check_value = IntVar()
+            self.variables.append(check_value)
+            i = 0
             for answer in self.questions[self.q_i][2]:
-                check_value = IntVar()
-                self.variables.append(check_value)
                 radio = Radiobutton(self.root,
                                     text=answer[0],
                                     variable=self.variables[len(self.variables)-1],
-                                    value=1)
+                                    value=i)
                 radio.pack()
                 self.question_widgets.append(radio)
+                i = i + 1
         elif self.questions[self.q_i][1] == 'f':
             input_box = Text(self.root)
             input_box.pack()
@@ -83,12 +91,23 @@ class Quiz():
         
 
     def check_answer(self):
-        if self.questions[self.q_i][1] == 'm' or self.questions[self.q_i][1] == 's':
+        true_answer = -1
+        if self.questions[self.q_i][1] == 's':
+            for i in range(len(self.question_widgets)):
+                if self.questions[self.q_i][2][i][1] == '+':
+                    true_answer = i
+            if self.variables[0].get() != true_answer:
+                self.false.append(self.q_i)
+                return
+            self.true.append(self.q_i)
+            self.points = self.points + 1
+        if self.questions[self.q_i][1] == 'm':
             for i in range(len(self.variables)):
                 if self.questions[self.q_i][2][i][1] == '+':
-                    true_answer = 1
+                    true_answer = i
                 else:
-                    true_answer = 0
+                    true_answer = -1
+                print(true_answer, self.variables[i].get())
                 if self.variables[i].get() != true_answer:
                     self.false.append(self.q_i)
                     return
@@ -125,7 +144,7 @@ class Quiz():
         # open Tkinter window
         root = Toplevel()
         root.title(u'Тестирование в процессе')
-        root.geometry('600x600')
+        root.geometry('800x600')
         #self.label_quest_counter = Label(root, text="Вопрос №", font='arial 14')
         #self.label_quest_counter.pack()
         self.label_quest_text = Label(root, text="0", font='arial 10')
@@ -182,7 +201,7 @@ class Application():
         # window settings
         root = Tk()
         root.title(u'Тестирование по Python')
-        root.geometry('600x300')
+        root.geometry('800x400')
         # greetings label
         label_info = Label(root, text="Вы можете пройти тест " +
                   "на знание языка программирования Python",
@@ -202,6 +221,7 @@ class Application():
 
     def results(self, true, false):
         Results(true, false)
+        self.button_start.configure(text='Тест завершен', bg='#55aa55')
         if len(true) < len(false):
             self.allow_quiz()
 
@@ -218,7 +238,7 @@ class Application():
         q = Quiz(self.quiz_filename, self)
         
 
-    def return_function():
+    def return_function(self, event):
         return
 
 app = Application()
