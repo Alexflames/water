@@ -141,16 +141,12 @@ class Application(Frame):
             self.scroll_y.pack_forget()
             self.scroll_x.pack_forget()
             
-            #try:
             fig = Figure(figsize=(5, 4), dpi=100)
             xs = np.arange(x1, x2, (x2 - x1) / 5000)
             ys = self.f(xs)
             upd(xs, ys)
 
             fig.add_subplot(111).plot(xs, ys)
-            #except Exception:
-                #self.wrong_input()
-            #else:
             self.canvas = FigureCanvasTkAgg(fig, master=root)
             self.canvas.draw()
             self.canvas.get_tk_widget().pack(side=TOP, fill=BOTH, expand=1)
