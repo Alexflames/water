@@ -30,7 +30,7 @@ for vertex in network:
         kmax = len(vertex)
     elif len(vertex) < kmin:
         kmin = len(vertex)
-    network_pk[len(vertex) + 1] += 1
+    network_pk[len(vertex)] += 1
 
 DEBUG_SUM = 0
 for i in range(N):
@@ -45,17 +45,15 @@ if DEBUG_INFO_PRINT:
 
 
 #Dmin, gamma_min, K_min
-res = [1, 0, 0] 
+res = [1, 0, 0]
+res_2 = [1, 0, 0]
 for Kmin in range(kmin, kmax + 1):
     if DEBUG_INFO_PRINT:
         print("Текущее значение Kmin =", Kmin)
 
     sum_log = 0
-    for i in range(N):
+    for i in range(0, N):
         sum_log += math.log(len(network[i]) / (Kmin - 0.5))
-
-    if DEBUG_INFO_PRINT:
-        print("Сумма логарифмов =", sum_log)
     
     gamma = 1 + N * (sum_log ** -1) #4.41
     if DEBUG_INFO_PRINT:
@@ -63,41 +61,65 @@ for Kmin in range(kmin, kmax + 1):
 
     # 4.42
     Kmin_dzeta = 0
-    for k in range(kmin, kmax):
-        Kmin_dzeta += 1 / (k ** -gamma)
+    for k in range(kmin, kmax + 1):
+        Kmin_dzeta += (k ** -gamma)
     if DEBUG_INFO_PRINT:
         print("Kmin_dzeta =", Kmin_dzeta)
 
     pk_theo = []
     for k in range(0, kmax + 1):
         if k < kmin:
-            pk_theo.append(1)
+            pk_theo.append(0)
         else:
-            pk_theo.append((k ** -gamma) / Kmin_dzeta)
+            pk_theo.append((k ** -gamma) / Kmin_dzeta) #4.42
+        if DEBUG_INFO_PRINT:
+            print(pk_theo[k])
+
+    if DEBUG_INFO_PRINT:
+        print("--------------------------------")
+
+    #4.43
+    Pk = []
+    for i in range(0, kmax + 1):
+        if i < kmin:
+            Pk.append(0)
+        elif i == 0:
+            Pk.append(pk_theo[0])
+        else:
+            Pk.append(Pk[i - 1] + pk_theo[i])
+    
+    Sk = []
+    for j in range(0, kmax + 1):
+        if i < kmin:
+            Sk.append(0)
+        elif j == 0:
+            Sk.append(network_pk[j])
+        else:
+            Sk.append(network_pk[j] + Sk[j - 1])
 
     #4.44
     D = 0
-    for k in range(Kmin, kmax + 1):
-        #4.43
-        Pk = 0
-        for i in range(Kmin, k + 1):
-            Pk += pk_theo[i]
-        
-        Sk = 0
-        for j in range(kmin, k + 1):
-            Sk += network_pk[j]
-        print(Pk, Sk)
-        D = max(D, abs(Sk - Pk))
+    Davg = 0
+    # в формуле k меняется от Kmin до kmax
+    for k in range(kmin, kmax + 1):
+        print(Pk[k], Sk[k])
+        D = max(D, abs(Sk[k] - Pk[k]))
+        Davg += abs(Sk[k] - Pk[k]) / (kmax + 1 - kmin)   
         
     if DEBUG_INFO_PRINT:
         print("D = ", D)
-        print()
+        print("Davg = ", Davg)
+        print("==============================")
 
     if D < res[0]:
         res = [D, gamma, Kmin]
 
-if DEBUG_INFO_PRINT:
-    print(res)
+    if Davg < res_2[0]:
+        res_2 = [Davg, gamma, Kmin]
+
+print("D ------------ ", "gamma ------------- ", "Kmin")
+print(res)
+print(res_2)
 
 
     
