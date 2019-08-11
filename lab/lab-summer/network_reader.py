@@ -121,7 +121,6 @@ print("D ------------ ", "gamma ------------- ", "Kmin")
 print(res)
 print(res_2)
 
-
     
 
 
