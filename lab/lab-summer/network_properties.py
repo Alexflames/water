@@ -7,39 +7,9 @@ import network_read as nread
 DEBUG_INFO_PRINT = True
 ########################
 
-# Converts graph to networkx package graph
-def convert_networkx(network):
-    new_network = nx.Graph(network)
-    return new_network
-
-# function returns two network representation
-# filename - input .csv file, size - number of nodes
-# 1 - Adjacency List
-# 2 - Networkx graph
-def read_undirected(filename, size):
-    network = []
-    networkx = []
-
-    csv_path = filename
-    with open(csv_path, "r") as f_obj:
-        reader = csv.reader(f_obj, delimiter='\t')
-    
-        for i in range(size):
-            network.append([])
-
-        f_obj.seek(0)
-
-        for row in reader:
-            network[int(row[0]) - 1].append(int(row[1]) - 1)
-            network[int(row[1]) - 1].append(int(row[0]) - 1)
-            networkx.append((row[0], row[1]))
-
-        networkx = convert_networkx(networkx)
-    return (network, networkx)
-
 # O(N) N-vertex count
 def min_max(network_input):
-    network = network_input[0]
+    network = network_input.network
     kmin = len(network)
     kmax = 0
     for vertex in network:
@@ -52,7 +22,7 @@ def min_max(network_input):
 
 # O(2N) N-vertex count
 def network_distribution(network_input):
-    network = network_input[0]
+    network = network_input.network
     pk = []
     kmin, kmax = min_max(network_input)
     for vertex in range(0, kmax + 1):
@@ -68,18 +38,18 @@ def lengths_ecc_diameter(network_input):
     return (lengths, eccentricity, diameter)
 
 def clique_number(network_input):
-    return nx.graph_clique_number(network_input[1])
+    return nx.graph_clique_number(network_input.networkx)
 
 def average_clustering(network_input):
-    network = network_input[1]
+    network = network_input.networkx
     return nx.average_clustering(network)
 
 def betweenness_centrality(network_input):
-    return nx.betweenness_centrality(network_input[1])
+    return nx.betweenness_centrality(network_input.networkx)
 
 # found using linear regression
 def gamma(network_input):
-    network = network_input[0]
+    network = network_input.network
     distribution = network_distribution(net)
     
 
