@@ -79,7 +79,6 @@ def read_undirected_matrix(filename, size = None,
                     if include_networkx:
                         networkx.append((labels[row[0]], j))
                     network[labels[row[0]] - 1].append(j - 1)
-                    print(j - 1, row[j])
                     network[j - 1].append(labels[row[0]] - 1)
             
         return ng.Networkg(network = network, networkx = networkx,

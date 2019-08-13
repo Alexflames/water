@@ -93,8 +93,8 @@ class Application(Frame):
         
         sinx.select()
         
-        l1 = Label(self.win, text="Minimal x")
-        l2 = Label(self.win, text="Maximal x")
+        l1 = Label(self.win, text="Выберите минимальное значение x")
+        l2 = Label(self.win, text="Выберите максимальное значение x")
         e1 = Entry(self.win)
         e2 = Entry(self.win)
 
@@ -103,26 +103,17 @@ class Application(Frame):
         l2.pack(anchor = W)
         e2.pack(anchor = W)
            
-        btn = Button(self.win, text="Draw", command=lambda: self.draw_plot(e1, e2))
+        btn = Button(self.win, text="Построить график", command=lambda: self.draw_plot(e1, e2))
         btn.pack(anchor=W)
 
     def about(self):
         win = Toplevel(root)
-        win.geometry("400x400")
+        win.geometry("400x100")
         lab = Label(win, text="[Задание 2.3!!!!!!]")
         lab.pack()
+
         
-    def draw_plot(self, e1, e2):
-        ylims = (-10, 10)
-        def upd(xs, ys):
-            if self.var.get() - 1 != 2 and self.var.get() - 1 != 3:
-                return
-            for i in range(len(xs)):
-                if ys[i] <= ylims[0] or ys[i] >= ylims[1]:
-                    ys[i] = np.nan
-                    xs[i] = np.nan
-            
-        
+    def draw_plot(self, e1, e2):            
         x1 = 0
         x2 = 0
         try:
@@ -136,7 +127,15 @@ class Application(Frame):
                 self.canvas.get_tk_widget().destroy()
             except:
                 pass
-            
+
+            def upd(xs, ys):
+                if self.var.get() - 1 != 2 and self.var.get() - 1 != 3:
+                    return
+                for i in range(len(xs)):
+                    if ys[i] <= -10 or ys[i] >= 10:
+                        ys[i] = np.nan
+                        xs[i] = np.nan
+                
             self.canv.pack_forget()
             self.scroll_y.pack_forget()
             self.scroll_x.pack_forget()
