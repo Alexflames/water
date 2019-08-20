@@ -52,8 +52,8 @@ def read_undirected_matrix(filename, size = None,
     if labels == True and size == None:
         labels = dict()
         to_labels = dict()
-        network = []
-        networkx = []
+        net = []
+        netx = []
         with open(filename, "r") as f_obj:
             reader = csv.reader(f_obj, delimiter=',')
             i = 0
@@ -61,34 +61,40 @@ def read_undirected_matrix(filename, size = None,
                 if i != 0:
                     labels[row[0]] = i
                     to_labels[i] = row[0]
-                    network.append([])
+                    net.append([])
                 i += 1
-                
+            data_size = i    
             f_obj.seek(0)
 
-            i = 0
+            i = -1
             for row in reader:
+                i += 1
                 if i == 0:
-                    i += 1
                     continue
+                
                 for j in range(len(row)):
-                    if j == 0:
+                    if j == 0 or j == i:
                         continue
-                    if row[j] == 0:
+                    if row[j] == '0':
                         continue
+                    if j >= data_size: #временная мера, удалить
+                                       #когда данные станут нормальными
+                        break
                     if include_networkx:
-                        networkx.append((labels[row[0]], j))
-                    network[labels[row[0]] - 1].append(j - 1)
-                    network[j - 1].append(labels[row[0]] - 1)
-            
-        return ng.Networkg(network = network, networkx = networkx,
+                        netx.append((labels[row[0]], j))
+                    net[labels[row[0]] - 1].append(j - 1)
+##                    net[j - 1].append(labels[row[0]] - 1)
+                    # TODO: сделать считывание только диагонали
+            if include_networkx:
+                real_netx = convert_networkx(netx)
+        return ng.Networkg(network = net, networkx = real_netx,
                             labels_nodes = labels, nodes_labels = to_labels)
         
-net = read_undirected_matrix("data/project1.csv", include_networkx = True)  
+##net = read_undirected_matrix("data/project1.csv", include_networkx = True)  
 ##print(net.network)        
 ##print(net.networkx)
-print(net.labels_nodes)
-print(net.nodes_labels)
+##print(net.labels_nodes)
+##print(net.nodes_labels)
     
 
 
