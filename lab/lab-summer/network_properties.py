@@ -133,15 +133,35 @@ def get_binned_data(labels, values, num):
             binned_labels.append(bin_sum / bin_size)
     return binned_labels, binned_values  
     
-USE_LOG_BINNING = True
+USE_LOG_BINNING = False
 # found using linear regression
 def gamma(network_input, output_name = None):
 #######################
 ##### Variant 1   #####
 #######################
     distribution = network_distribution(network_input)
+##    if USE_LOG_BINNING:
+##        # log-binning
+##        log_distribution = []
+##        log_rng = []
+##        power2 = 1
+##        # <= или < ???
+##        while power2 <= len(distribution):
+##            log_rng.append((power2 + (power2 * 100)) / 2)
+##            log_distribution.append(0)
+##            power2 *= 2
+##        for i in range(len(distribution)):
+##            # ceil и minus-1
+##            if i == 0 or distribution[i] == 0:
+##                continue
+##            group = math.ceil(math.log(i, 2) - 0.99)
+##            log_distribution[group] += distribution[i]
+##        while log_distribution[-1] == 0:
+##            log_distribution = log_distribution[:-1]
     result = plfit(distribution, discrete=True)
-    return(result._alpha)
+    answer = result._alpha
+    write_file(answer, output_name = output_name)
+    return(answer)
 #######################
 ##### Variant 2   #####
 #######################

@@ -4,4 +4,5 @@ We chose its variant G(n, p) based on connecting nodes randomly, the method was 
 In an n-nodes graph, every node in it with probability p is connected to another node in the graph. 
 
 PROPERTIES?
-
+Barabasi-Albert
+The previous model does not 
