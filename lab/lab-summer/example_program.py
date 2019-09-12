@@ -22,12 +22,12 @@ def test_example(filename, size, matrix = False):
 ##print("Тест на матрице")
 ##npr.test_example("data/graph1.csv", 191, matrix = True)
 #1 to 75
-##props = ["diameter", "acc", "betweenness", "gamma", "density", "clique"] 
+props = ["diameter", "acc", "betweenness", "density", "clique"] 
+npr.get_properties_files(filename_base = "data/1.4graph", files_count_from = 1,
+                         files_count_to = 75, size = None,
+                         properties = props, matrix = True, add_print = True)
+
+##props = ["gamma"] 
 ##npr.get_properties_files(filename_base = "data/graph", files_count_from = 1,
 ##                         files_count_to = 75, size = None,
 ##                         properties = props, matrix = True)
-
-props = ["gamma"] 
-npr.get_properties_files(filename_base = "data/graph", files_count_from = 1,
-                         files_count_to = 75, size = None,
-                         properties = props, matrix = True)

@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Простые задачи с использованием JS</title>
+  <meta name="description" content="Script course">
+  <meta name="author" content="Grigoriev Alexey 451">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <img src="http://www.printplay.ru/wp-content/uploads/2010/03/_001_1800.jpg" style="max-width: 30%; max-height: 30%" />
+
+  <p>
+    <div>
+      x1, y1 (числа от 1 до 8): 
+    	<input type="text" name="x1"/>
+      <input type="text" name="y1"/>
+    <div>
+    <div>
+      x2, y2 (числа от 1 до 8): 
+      <input type="text" name="x2"/>
+      <input type="text" name="y2"/>
+    <div>
+  	<input type="button" onclick="sameColor()" value="Клетки одного цвета?">
+  </p>
+
+</head>
+
+<body>
+  <script>
+  	function sameColor() {
+  		var digits = 3
+  		
+	  	var x1 = parseInt(document.getElementsByName('x1')[0].value);
+      var y1 = parseInt(document.getElementsByName('y1')[0].value);
+      var x2 = parseInt(document.getElementsByName('x2')[0].value);
+      var y2 = parseInt(document.getElementsByName('y2')[0].value);
+	  	alert("Клетки одного цвета? " + (((x1 + y1) % 2) == ((x2 + y2) % 2)))
+  	}
+  	
+  </script>
+</body>
+</html>

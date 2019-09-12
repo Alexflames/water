@@ -1,75 +1,227 @@
-19
-21
-27
-31
-27
-27
-25
-24
-22
-19
-19
-17
-17
-16
-38
-38
-41
-41
-40
-40
-39
-38
-38
-35
-29
-27
-14
-13
-12
-12
-12
-11
-12
-12
-12
-11
-13
-12
-11
-11
-12
-12
-12
-12
-11
-11
-10
-9
-7
-5
-7
-7
-7
-8
-7
-8
-8
-8
-9
-9
-9
-8
-7
-12
-12
-11
-13
-12
-13
-12
-13
-13
-14
-12
-13
+data/1.2graph1: 98
+data/1.2graph2: 105
+data/1.2graph3: 92
+data/1.2graph4: 64
+data/1.2graph5: 59
+data/1.2graph6: 47
+data/1.2graph7: 51
+data/1.2graph8: 53
+data/1.2graph9: 55
+data/1.2graph10: 67
+data/1.2graph11: 85
+data/1.2graph12: 107
+data/1.2graph13: 106
+data/1.2graph14: 96
+data/1.2graph15: 62
+data/1.2graph16: 46
+data/1.2graph17: 55
+data/1.2graph18: 66
+data/1.2graph19: 70
+data/1.2graph20: 64
+data/1.2graph21: 74
+data/1.2graph22: 86
+data/1.2graph23: 89
+data/1.2graph24: 80
+data/1.2graph25: 57
+data/1.2graph26: 58
+data/1.2graph27: 56
+data/1.2graph28: 42
+data/1.2graph29: 59
+data/1.2graph30: 55
+data/1.2graph31: 61
+data/1.2graph32: 54
+data/1.2graph33: 58
+data/1.2graph34: 60
+data/1.2graph35: 70
+data/1.2graph36: 70
+data/1.2graph37: 47
+data/1.2graph38: 48
+data/1.2graph39: 56
+data/1.2graph40: 61
+data/1.2graph41: 68
+data/1.2graph42: 63
+data/1.2graph43: 57
+data/1.2graph44: 55
+data/1.2graph45: 63
+data/1.2graph46: 74
+data/1.2graph47: 81
+data/1.2graph48: 73
+data/1.2graph49: 65
+data/1.2graph50: 69
+data/1.2graph51: 74
+data/1.2graph52: 90
+data/1.2graph53: 88
+data/1.2graph54: 88
+data/1.2graph55: 87
+data/1.2graph56: 90
+data/1.2graph57: 76
+data/1.2graph58: 55
+data/1.2graph59: 81
+data/1.2graph60: 105
+data/1.2graph61: 101
+data/1.2graph62: 65
+data/1.2graph63: 56
+data/1.2graph64: 82
+data/1.2graph65: 88
+data/1.2graph66: 69
+data/1.2graph67: 54
+data/1.2graph68: 51
+data/1.2graph69: 54
+data/1.2graph70: 65
+data/1.2graph71: 64
+data/1.2graph72: 79
+data/1.2graph73: 80
+data/1.2graph74: 70
+data/1.2graph75: 61
+
+data/1.3graph1: 107
+data/1.3graph2: 115
+data/1.3graph3: 100
+data/1.3graph4: 74
+data/1.3graph5: 65
+data/1.3graph6: 56
+data/1.3graph7: 59
+data/1.3graph8: 60
+data/1.3graph9: 63
+data/1.3graph10: 75
+data/1.3graph11: 94
+data/1.3graph12: 113
+data/1.3graph13: 116
+data/1.3graph14: 101
+data/1.3graph15: 70
+data/1.3graph16: 54
+data/1.3graph17: 62
+data/1.3graph18: 73
+data/1.3graph19: 74
+data/1.3graph20: 71
+data/1.3graph21: 86
+data/1.3graph22: 93
+data/1.3graph23: 99
+data/1.3graph24: 97
+data/1.3graph25: 69
+data/1.3graph26: 70
+data/1.3graph27: 66
+data/1.3graph28: 52
+data/1.3graph29: 66
+data/1.3graph30: 67
+data/1.3graph31: 70
+data/1.3graph32: 63
+data/1.3graph33: 69
+data/1.3graph34: 71
+data/1.3graph35: 80
+data/1.3graph36: 82
+data/1.3graph37: 58
+data/1.3graph38: 54
+data/1.3graph39: 63
+data/1.3graph40: 66
+data/1.3graph41: 76
+data/1.3graph42: 73
+data/1.3graph43: 66
+data/1.3graph44: 59
+data/1.3graph45: 74
+data/1.3graph46: 88
+data/1.3graph47: 94
+data/1.3graph48: 84
+data/1.3graph49: 72
+data/1.3graph50: 76
+data/1.3graph51: 86
+data/1.3graph52: 99
+data/1.3graph53: 98
+data/1.3graph54: 103
+data/1.3graph55: 98
+data/1.3graph56: 98
+data/1.3graph57: 84
+data/1.3graph58: 66
+data/1.3graph59: 95
+data/1.3graph60: 116
+data/1.3graph61: 109
+data/1.3graph62: 76
+data/1.3graph63: 65
+data/1.3graph64: 89
+data/1.3graph65: 99
+data/1.3graph66: 81
+data/1.3graph67: 63
+data/1.3graph68: 56
+data/1.3graph69: 62
+data/1.3graph70: 73
+data/1.3graph71: 71
+data/1.3graph72: 89
+data/1.3graph73: 88
+data/1.3graph74: 78
+data/1.3graph75: 70
+
+data/1.4graph1: 114
+data/1.4graph2: 121
+data/1.4graph3: 107
+data/1.4graph4: 86
+data/1.4graph5: 77
+data/1.4graph6: 66
+data/1.4graph7: 69
+data/1.4graph8: 71
+data/1.4graph9: 71
+data/1.4graph10: 82
+data/1.4graph11: 105
+data/1.4graph12: 123
+data/1.4graph13: 124
+data/1.4graph14: 112
+data/1.4graph15: 83
+data/1.4graph16: 62
+data/1.4graph17: 67
+data/1.4graph18: 78
+data/1.4graph19: 83
+data/1.4graph20: 81
+data/1.4graph21: 95
+data/1.4graph22: 101
+data/1.4graph23: 110
+data/1.4graph24: 109
+data/1.4graph25: 84
+data/1.4graph26: 84
+data/1.4graph27: 77
+data/1.4graph28: 64
+data/1.4graph29: 77
+data/1.4graph30: 77
+data/1.4graph31: 82
+data/1.4graph32: 74
+data/1.4graph33: 82
+data/1.4graph34: 82
+data/1.4graph35: 92
+data/1.4graph36: 94
+data/1.4graph37: 71
+data/1.4graph38: 60
+data/1.4graph39: 70
+data/1.4graph40: 74
+data/1.4graph41: 89
+data/1.4graph42: 88
+data/1.4graph43: 74
+data/1.4graph44: 72
+data/1.4graph45: 86
+data/1.4graph46: 99
+data/1.4graph47: 98
+data/1.4graph48: 93
+data/1.4graph49: 80
+data/1.4graph50: 84
+data/1.4graph51: 92
+data/1.4graph52: 107
+data/1.4graph53: 108
+data/1.4graph54: 113
+data/1.4graph55: 109
+data/1.4graph56: 114
+data/1.4graph57: 93
+data/1.4graph58: 79
+data/1.4graph59: 108
+data/1.4graph60: 124
+data/1.4graph61: 118
+data/1.4graph62: 86
+data/1.4graph63: 75
+data/1.4graph64: 99
+data/1.4graph65: 110
+data/1.4graph66: 97
+data/1.4graph67: 72
+data/1.4graph68: 65
+data/1.4graph69: 71
+data/1.4graph70: 83
+data/1.4graph71: 85
+data/1.4graph72: 96
+data/1.4graph73: 97
+data/1.4graph74: 85
+data/1.4graph75: 77

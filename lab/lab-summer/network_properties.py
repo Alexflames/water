@@ -11,10 +11,15 @@ from sklearn.linear_model import LinearRegression
 # GLOBAL CONSTANTS BLOCK
 DEBUG_INFO_PRINT = True
 FILENAME = None
+ADD_PRINT = ""
 ########################
 
 def set_filename(filename):
     FILENAME = filename
+
+def set_addprint(string):
+    global ADD_PRINT
+    ADD_PRINT = string
 
 def write_file(data, output_name = None, is_array = False):
     file = FILENAME
@@ -26,10 +31,10 @@ def write_file(data, output_name = None, is_array = False):
     f = open(file, 'a')
     if is_array:
         for info in data:
-            f.write(str(info) + ';')
+            f.write(ADD_PRINT + str(info) + ';')
         f.write('\n')
     else:
-        f.write(str(data) + '\n')
+        f.write(ADD_PRINT + str(data) + '\n')
     f.close()
 
 # O(N) N-vertex count
@@ -269,11 +274,12 @@ def get_property(property_name, net):
 # [files_count_from -> files_count_to]: inclusive !!
 def get_properties_files(filename_base,
                          files_count_from, files_count_to,
-                         size, properties, matrix = False):
+                         size, properties, matrix = False, add_print = False):
     try:
         os.makedirs("output")
     except:
         pass
+
     
     for i in range(int(files_count_from), int(files_count_to + 1)):
         if matrix == False:
@@ -282,6 +288,9 @@ def get_properties_files(filename_base,
         else:
             net = nread.read_undirected_matrix(filename_base + str(i) + ".csv",
                                                include_networkx = True)
+        if add_print:
+            set_addprint(filename_base + str(i) + ": ")
+
         for prop in properties:
             get_property(prop, net)
     

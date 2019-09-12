@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Простые задачи с использованием JS</title>
+  <meta name="description" content="Script course">
+  <meta name="author" content="Grigoriev Alexey 451">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <p>
+  	<input type="text" name="lucky-number"/>
+  	<input type="button" onclick="isDescending()" value="Убывающая последовательность?">
+  </p>
+
+</head>
+
+<body>
+  <script>
+  	function isDescending() {
+  		var digits = 3
+  		
+	  	var number = parseInt(document.getElementsByName('lucky-number')[0].value);
+	  	if (number < Math.pow(10, digits - 1) || number >= Math.pow(10, digits)) {
+	  		console.log(number)
+	  		console.log(Math.pow(10, digits))
+	  		console.log(Math.pow(10, digits + 1))
+	  		alert("Число должно быть трехзначным");
+	  	}
+	  	else {
+	  		var n1 = Math.floor(number / 100);
+	  		var n2 = Math.floor(number % 100 / 10);
+	  		var n3 = Math.floor(number % 10);
+	  		alert("Убывающая последовательность? " + (n1 > n2 && n2 > n3).toString())
+	  	}
+  	}
+  	
+  </script>
+</body>
+</html>

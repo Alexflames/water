@@ -1,75 +1,227 @@
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-5
-INF
-INF
-INF
-4
-5
-5
-4
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
+data/1.2graph1: 4
+data/1.2graph2: 5
+data/1.2graph3: 4
+data/1.2graph4: 4
+data/1.2graph5: 4
+data/1.2graph6: 4
+data/1.2graph7: 4
+data/1.2graph8: 4
+data/1.2graph9: 4
+data/1.2graph10: 4
+data/1.2graph11: 4
+data/1.2graph12: 4
+data/1.2graph13: 4
+data/1.2graph14: 4
+data/1.2graph15: 4
+data/1.2graph16: 4
+data/1.2graph17: 5
+data/1.2graph18: 4
+data/1.2graph19: 4
+data/1.2graph20: 3
+data/1.2graph21: 4
+data/1.2graph22: 4
+data/1.2graph23: 3
+data/1.2graph24: 5
+data/1.2graph25: 4
+data/1.2graph26: 4
+data/1.2graph27: 4
+data/1.2graph28: 4
+data/1.2graph29: 4
+data/1.2graph30: 4
+data/1.2graph31: 4
+data/1.2graph32: 4
+data/1.2graph33: 4
+data/1.2graph34: 4
+data/1.2graph35: 4
+data/1.2graph36: 4
+data/1.2graph37: 3
+data/1.2graph38: 4
+data/1.2graph39: 4
+data/1.2graph40: 4
+data/1.2graph41: 4
+data/1.2graph42: 4
+data/1.2graph43: 4
+data/1.2graph44: 4
+data/1.2graph45: 4
+data/1.2graph46: 4
+data/1.2graph47: 4
+data/1.2graph48: 4
+data/1.2graph49: 4
+data/1.2graph50: 3
+data/1.2graph51: 4
+data/1.2graph52: 4
+data/1.2graph53: 4
+data/1.2graph54: 4
+data/1.2graph55: 4
+data/1.2graph56: 4
+data/1.2graph57: 3
+data/1.2graph58: 4
+data/1.2graph59: 4
+data/1.2graph60: 4
+data/1.2graph61: 4
+data/1.2graph62: 4
+data/1.2graph63: 4
+data/1.2graph64: 4
+data/1.2graph65: 4
+data/1.2graph66: 3
+data/1.2graph67: 4
+data/1.2graph68: 3
+data/1.2graph69: 4
+data/1.2graph70: 4
+data/1.2graph71: 3
+data/1.2graph72: 3
+data/1.2graph73: 4
+data/1.2graph74: 3
+data/1.2graph75: 4
+
+data/1.3graph1: 3
+data/1.3graph2: 3
+data/1.3graph3: 3
+data/1.3graph4: 3
+data/1.3graph5: 3
+data/1.3graph6: 3
+data/1.3graph7: 3
+data/1.3graph8: 3
+data/1.3graph9: 3
+data/1.3graph10: 3
+data/1.3graph11: 3
+data/1.3graph12: 3
+data/1.3graph13: 3
+data/1.3graph14: 3
+data/1.3graph15: 3
+data/1.3graph16: 3
+data/1.3graph17: 3
+data/1.3graph18: 3
+data/1.3graph19: 3
+data/1.3graph20: 3
+data/1.3graph21: 3
+data/1.3graph22: 3
+data/1.3graph23: 3
+data/1.3graph24: 3
+data/1.3graph25: 3
+data/1.3graph26: 3
+data/1.3graph27: 3
+data/1.3graph28: 3
+data/1.3graph29: 3
+data/1.3graph30: 3
+data/1.3graph31: 3
+data/1.3graph32: 3
+data/1.3graph33: 3
+data/1.3graph34: 3
+data/1.3graph35: 3
+data/1.3graph36: 3
+data/1.3graph37: 3
+data/1.3graph38: 3
+data/1.3graph39: 3
+data/1.3graph40: 3
+data/1.3graph41: 3
+data/1.3graph42: 3
+data/1.3graph43: 3
+data/1.3graph44: 3
+data/1.3graph45: 3
+data/1.3graph46: 3
+data/1.3graph47: 3
+data/1.3graph48: 3
+data/1.3graph49: 3
+data/1.3graph50: 3
+data/1.3graph51: 3
+data/1.3graph52: 3
+data/1.3graph53: 3
+data/1.3graph54: 3
+data/1.3graph55: 3
+data/1.3graph56: 3
+data/1.3graph57: 3
+data/1.3graph58: 3
+data/1.3graph59: 3
+data/1.3graph60: 3
+data/1.3graph61: 3
+data/1.3graph62: 3
+data/1.3graph63: 3
+data/1.3graph64: 3
+data/1.3graph65: 3
+data/1.3graph66: 3
+data/1.3graph67: 3
+data/1.3graph68: 3
+data/1.3graph69: 3
+data/1.3graph70: 3
+data/1.3graph71: 3
+data/1.3graph72: 3
+data/1.3graph73: 3
+data/1.3graph74: 3
+data/1.3graph75: 3
+
+data/1.4graph1: 3
+data/1.4graph2: 3
+data/1.4graph3: 3
+data/1.4graph4: 3
+data/1.4graph5: 3
+data/1.4graph6: 3
+data/1.4graph7: 3
+data/1.4graph8: 3
+data/1.4graph9: 3
+data/1.4graph10: 3
+data/1.4graph11: 3
+data/1.4graph12: 3
+data/1.4graph13: 3
+data/1.4graph14: 3
+data/1.4graph15: 3
+data/1.4graph16: 3
+data/1.4graph17: 3
+data/1.4graph18: 3
+data/1.4graph19: 3
+data/1.4graph20: 3
+data/1.4graph21: 3
+data/1.4graph22: 3
+data/1.4graph23: 3
+data/1.4graph24: 3
+data/1.4graph25: 3
+data/1.4graph26: 3
+data/1.4graph27: 3
+data/1.4graph28: 3
+data/1.4graph29: 3
+data/1.4graph30: 3
+data/1.4graph31: 3
+data/1.4graph32: 3
+data/1.4graph33: 3
+data/1.4graph34: 3
+data/1.4graph35: 3
+data/1.4graph36: 3
+data/1.4graph37: 3
+data/1.4graph38: 3
+data/1.4graph39: 3
+data/1.4graph40: 3
+data/1.4graph41: 3
+data/1.4graph42: 3
+data/1.4graph43: 3
+data/1.4graph44: 3
+data/1.4graph45: 3
+data/1.4graph46: 3
+data/1.4graph47: 3
+data/1.4graph48: 3
+data/1.4graph49: 3
+data/1.4graph50: 3
+data/1.4graph51: 3
+data/1.4graph52: 3
+data/1.4graph53: 3
+data/1.4graph54: 3
+data/1.4graph55: 3
+data/1.4graph56: 3
+data/1.4graph57: 3
+data/1.4graph58: 3
+data/1.4graph59: 3
+data/1.4graph60: 3
+data/1.4graph61: 3
+data/1.4graph62: 3
+data/1.4graph63: 3
+data/1.4graph64: 3
+data/1.4graph65: 3
+data/1.4graph66: 3
+data/1.4graph67: 3
+data/1.4graph68: 3
+data/1.4graph69: 3
+data/1.4graph70: 3
+data/1.4graph71: 3
+data/1.4graph72: 3
+data/1.4graph73: 3
+data/1.4graph74: 3
+data/1.4graph75: 3
