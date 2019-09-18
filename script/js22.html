@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Непростые задачи с использованием JS</title>
+  <meta name="description" content="Script course">
+  <meta name="author" content="Grigoriev Alexey 451">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <div> 
+    Введите телефон в формате: +7-9XX-XXX-XX-XX без знаков тире
+    <input type="text" id="phone" onchange="textChangeInBox()">
+    <input type="button" value="Проверка">
+  </div>
+  <div id="ok">Текст не соответствует формату</div>
+
+</head>
+
+<body>
+  <script>
+    function textChangeInBox() {
+      console.log("event fired!");
+      var value = document.getElementById("phone").value;
+      var match = value.match(/[+]79\d{9}/);
+      if (match === null) {
+        document.getElementById("ok").value = "Текст не соответствует формату";
+      }
+      else {
+        console.log(match[0])
+        document.getElementById("ok").innerHTML = "Введен верный номер телефона!";
+      }
+    }
+  </script>
+</body>
+</html>

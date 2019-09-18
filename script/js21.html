@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Непростые задачи с использованием JS</title>
+  <meta name="description" content="Script course">
+  <meta name="author" content="Grigoriev Alexey 451">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <img src="https://images-na.ssl-images-amazon.com/images/I/7172k2Arv1L._SY355_.png" style="max-width: 30%; max-height: 30%" id="pic" />
+
+</head>
+
+<body>
+  <script>
+    var rotation = 0;
+    var scale = 1;
+    setTimeout(rotata, 100);
+    setTimeout(rotata2, 2000)
+
+    function rotata() {
+      scale += 0.025;
+      document.getElementById("pic").setAttribute('style', 
+        'transform: rotate(' + rotation + 'deg)');
+      document.getElementById("pic").setAttribute('style', 
+        'transform: rotate(' + rotation + 'deg) ' + 'scale(' + scale + ', ' + scale + ')');
+      setTimeout(rotata, 50);
+    }
+
+  	function rotata2() {
+      rotation += 3 % 360;
+  		document.getElementById("pic").setAttribute('style', 
+        'transform: rotate(' + rotation + 'deg)');
+      document.getElementById("pic").setAttribute('style', 
+        'transform: rotate(' + rotation + 'deg) ' + 'scale(' + scale + ', ' + scale + ')');
+      setTimeout(rotata2, 33);
+  	}
+  	
+  </script>
+</body>
+</html>
