@@ -10,11 +10,16 @@ from sklearn.linear_model import LinearRegression
 
 # GLOBAL CONSTANTS BLOCK
 DEBUG_INFO_PRINT = True
+OUTPUT_ADD = ""
 FILENAME = None
 ########################
 
 def set_filename(filename):
     FILENAME = filename
+
+def set_output_info(info):
+    global OUTPUT_ADD
+    OUTPUT_ADD = info
 
 def write_file(data, output_name = None, is_array = False):
     file = FILENAME
@@ -29,7 +34,7 @@ def write_file(data, output_name = None, is_array = False):
             f.write(str(info) + ';')
         f.write('\n')
     else:
-        f.write(str(data) + '\n')
+        f.write(OUTPUT_ADD + str(data) + '\n')
     f.close()
 
 # O(N) N-vertex count

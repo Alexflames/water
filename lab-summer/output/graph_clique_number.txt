@@ -1,75 +1,243 @@
-19
-21
-27
-31
-27
-27
-25
-24
-22
-19
-19
-17
-17
-16
-38
-38
-41
-41
-40
-40
-39
-38
-38
-35
-29
-27
-14
-13
-12
-12
-12
-11
-12
-12
-12
-11
-13
-12
-11
-11
-12
-12
-12
-12
-11
-11
-10
-9
-7
-5
-7
-7
-7
-8
-7
-8
-8
-8
-9
-9
-9
-8
-7
-12
-12
-11
-13
-12
-13
-12
-13
-13
-14
-12
-13
+0.9graph: 3
+0.9graph: 3
+0.9graph: 7
+0.9graph: 10
+0.9graph: 10
+0.9graph: 10
+0.9graph: 8
+0.9graph: 6
+0.9graph: 5
+0.9graph: 4
+0.9graph: 5
+0.9graph: 5
+0.9graph: 5
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 3
+0.9graph: 4
+0.9graph: 4
+0.9graph: 15
+0.9graph: 14
+0.9graph: 19
+0.9graph: 19
+0.9graph: 20
+0.9graph: 20
+0.9graph: 5
+0.9graph: 4
+0.9graph: 4
+0.9graph: 6
+0.9graph: 5
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 3
+0.9graph: 4
+0.9graph: 2
+0.9graph: 2
+0.9graph: 3
+0.9graph: 3
+0.9graph: 2
+0.9graph: 3
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 3
+0.9graph: 4
+0.9graph: 3
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 3
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 3
+0.9graph: 3
+0.9graph: 3
+0.9graph: 3
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 3
+0.9graph: 3
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 4
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+0.9graph: 2
+1graph: 5
+1graph: 6
+1graph: 9
+1graph: 14
+1graph: 12
+1graph: 13
+1graph: 12
+1graph: 10
+1graph: 8
+1graph: 6
+1graph: 7
+1graph: 6
+1graph: 6
+1graph: 7
+1graph: 7
+1graph: 8
+1graph: 8
+1graph: 6
+1graph: 6
+1graph: 6
+1graph: 29
+1graph: 26
+1graph: 24
+1graph: 27
+1graph: 28
+1graph: 28
+1graph: 8
+1graph: 6
+1graph: 6
+1graph: 8
+1graph: 6
+1graph: 6
+1graph: 6
+1graph: 5
+1graph: 5
+1graph: 5
+1graph: 4
+1graph: 4
+1graph: 3
+1graph: 4
+1graph: 3
+1graph: 5
+1graph: 8
+1graph: 8
+1graph: 8
+1graph: 8
+1graph: 7
+1graph: 7
+1graph: 4
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 4
+1graph: 3
+1graph: 4
+1graph: 4
+1graph: 4
+1graph: 4
+1graph: 3
+1graph: 4
+1graph: 2
+1graph: 2
+1graph: 2
+1graph: 2
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 6
+1graph: 6
+1graph: 6
+1graph: 8
+1graph: 7
+1graph: 7
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 3
+1graph: 3
+1.1graph: 5
+1.1graph: 6
+1.1graph: 9
+1.1graph: 14
+1.1graph: 12
+1.1graph: 13
+1.1graph: 12
+1.1graph: 10
+1.1graph: 8
+1.1graph: 6
+1.1graph: 7
+1.1graph: 6
+1.1graph: 6
+1.1graph: 7
+1.1graph: 7
+1.1graph: 8
+1.1graph: 8
+1.1graph: 6
+1.1graph: 6
+1.1graph: 6
+1.1graph: 29
+1.1graph: 26
+1.1graph: 24
+1.1graph: 27
+1.1graph: 28
+1.1graph: 28
+1.1graph: 8
+1.1graph: 6
+1.1graph: 6
+1.1graph: 8
+1.1graph: 6
+1.1graph: 6
+1.1graph: 6
+1.1graph: 5
+1.1graph: 5
+1.1graph: 5
+1.1graph: 4
+1.1graph: 4
+1.1graph: 3
+1.1graph: 4
+1.1graph: 3
+1.1graph: 5
+1.1graph: 8
+1.1graph: 8
+1.1graph: 8
+1.1graph: 8
+1.1graph: 7
+1.1graph: 7
+1.1graph: 4
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 4
+1.1graph: 3
+1.1graph: 4
+1.1graph: 4
+1.1graph: 4
+1.1graph: 4
+1.1graph: 3
+1.1graph: 4
+1.1graph: 2
+1.1graph: 2
+1.1graph: 2
+1.1graph: 2
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 6
+1.1graph: 6
+1.1graph: 6
+1.1graph: 8
+1.1graph: 7
+1.1graph: 7
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3
+1.1graph: 3

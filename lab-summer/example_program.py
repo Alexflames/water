@@ -27,7 +27,9 @@ def test_example(filename, size, matrix = False):
 ##                         files_count_to = 75, size = None,
 ##                         properties = props, matrix = True)
 
-props = ["gamma"] 
-npr.get_properties_files(filename_base = "data/graph", files_count_from = 1,
-                         files_count_to = 75, size = None,
+filename = "1.1graph"
+npr.set_output_info(filename + ": ")
+props = ["diameter", "acc", "betweenness", "density", "clique"]
+npr.get_properties_files(filename_base = "data/" + filename, files_count_from = 1,
+                         files_count_to = 81, size = None,
                          properties = props, matrix = True)

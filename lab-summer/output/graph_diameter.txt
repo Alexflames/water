@@ -1,75 +1,243 @@
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-5
-INF
-INF
-INF
-4
-5
-5
-4
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
-INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: 7
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: 5
+0.9graph: 5
+0.9graph: 4
+0.9graph: 5
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+0.9graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: 4
+1graph: 5
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: 4
+1.1graph: 5
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
+1.1graph: INF
