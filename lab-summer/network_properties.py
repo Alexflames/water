@@ -7,6 +7,7 @@ import powerlaw as pwl
 from plfit import plfit
 import os
 from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 
 # GLOBAL CONSTANTS BLOCK
 DEBUG_INFO_PRINT = True
@@ -139,8 +140,30 @@ def get_binned_data(labels, values, num):
     return binned_labels, binned_values  
     
 USE_LOG_BINNING = False
-# found using linear regression
+
 def gamma(network_input, output_name = None):
+    distribution = network_distribution(network_input)[1:]
+    model = LinearRegression()
+    distribution = [math.log(x + 1, 10) + 1 for x in distribution]
+
+    degrees = [math.log(x, 10) for x in range(1, len(distribution) + 1)]
+    
+    npdistr = np.array(distribution).reshape(-1, 1)
+    model.fit(npdistr, degrees)
+    answer = model.coef_[0]
+    print(npdistr, degrees)
+    print(model.coef_, model.intercept_)
+    write_file(answer, output_name = output_name)
+    
+    plt.scatter(npdistr, degrees, color='black')
+    plt.plot(npdistr, degrees)
+    plt.show()
+
+    return answer
+    
+
+# found using linear regression
+def old_gamma(network_input, output_name = None):
 #######################
 ##### Variant 1   #####
 #######################

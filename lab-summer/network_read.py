@@ -69,22 +69,22 @@ def read_undirected_matrix(filename, size = None,
             i = -1
             for row in reader:
                 i += 1
-                if i == 0:
+                if i == 0:             # первая строка - лейблы 
                     continue
                 
                 for j in range(len(row)):
-                    if j == 0 or j == i:
+                    if j == 0 or j == i:  # первая строка - лейблы, диагональ не считаем
                         continue
                     if row[j] == '0':
                         continue
-                    if j >= data_size: #временная мера, удалить
-                                       #когда данные станут нормальными
+                    if j >= data_size: # временная мера, удалить
+                                       # когда данные станут нормальными
                         break
                     if include_networkx:
                         netx.append((labels[row[0]], j))
                     net[labels[row[0]] - 1].append(j - 1)
 ##                    net[j - 1].append(labels[row[0]] - 1)
-                    # TODO: сделать считывание только диагонали
+                    # TODO: сделать считывание только верхнего треугольника
             if include_networkx:
                 real_netx = convert_networkx(netx)
         return ng.Networkg(network = net, networkx = real_netx,
