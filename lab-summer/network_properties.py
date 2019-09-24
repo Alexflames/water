@@ -139,24 +139,59 @@ def get_binned_data(labels, values, num):
             binned_labels.append(bin_sum / bin_size)
     return binned_labels, binned_values  
     
-USE_LOG_BINNING = False
+USE_LOG_BINNING = True
 
 def gamma(network_input, output_name = None):
     distribution = network_distribution(network_input)[1:]
     model = LinearRegression()
-    distribution = [math.log(x + 1, 10) + 1 for x in distribution]
-
-    degrees = [math.log(x, 10) for x in range(1, len(distribution) + 1)]
+    #distribution = [math.log(x + 1, 10) for x in distribution]
+    degrees = [x for x in range(len(distribution))]
     
-    npdistr = np.array(distribution).reshape(-1, 1)
-    model.fit(npdistr, degrees)
+    if USE_LOG_BINNING:
+        # log-binning
+        log_distribution = []
+        log_rng = []
+        powermul = 1
+        power = 1.5
+        # <= или < ???
+        while powermul <= len(distribution):
+            log_rng.append((powermul + (powermul * power)) / 2)
+            log_distribution.append(0)
+            powermul *= power
+        for i in degrees:
+            # ceil и minus-1
+            if i == 0 or distribution[i] == 0:
+                continue
+            group = math.ceil(math.log(i, power) - 0.99)
+            log_distribution[group] += distribution[i]
+##        while log_distribution[-1] == 0:
+##            log_distribution = log_distribution[:-1]
+        print("No-log rng:", log_rng)
+        log_degrees = [math.log(x, 10) for x in log_rng]
+        print("Log rng:", log_degrees)
+        print("No-log distr:", log_distribution)
+        log_distribution = [math.log(x, 10) for x in log_distribution]
+        print("Log distr:", log_distribution)
+        
+        npdistr = np.array(log_distribution)
+        npdegrees = np.array(log_degrees).reshape(-1, 1)
+    else:
+        distribution = [math.log(x + 1, 10) for x in distribution]
+        npdistr = np.array(distribution)
+        degrees = [math.log(x + 1, 10) for x in degrees]
+        npdegrees = np.array(degrees).reshape(-1, 1)
+        
+        
+    model.fit(npdegrees, npdistr)
     answer = model.coef_[0]
-    print(npdistr, degrees)
+    print(npdistr, npdegrees)
     print(model.coef_, model.intercept_)
     write_file(answer, output_name = output_name)
     
-    plt.scatter(npdistr, degrees, color='black')
-    plt.plot(npdistr, degrees)
+    plt.scatter(npdegrees, npdistr, color='black')
+    plt.plot(npdegrees, npdistr)
+    plt.xlabel("log(10, степень_вершины)")
+    plt.ylabel("log(10, распределение_степеней)")
     plt.show()
 
     return answer
