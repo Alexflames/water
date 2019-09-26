@@ -9,24 +9,194 @@
   <meta name="author" content="Grigoriev Alexey 451">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style>
+    td {
+      width: 16px;
+      height: 24px;
+      padding-left: 8px;
+      align-content: center;
+      display: inline-block;
+      white-space: nowrap;
+      border: 1px solid black;
+      background-color:silver;
+    }
 
+    td:active {
+      background-color: gray;
+    }
 
-
+  </style>
 </head>
 
 <body>
-
-  Oh, ЭТО САПЕР!
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoemXNFWcMD-mPkkAQc34ujZ8G4SBWzZYhoF65w9-Ye1zzrB3c"
+  style="transform: scale(0.3, 0.3)"/>
   <table id="table">
-    
   </table>
 
 </body>
 
 <script>
-  function generateTable() {
-    var table = document.getElementById("table")
+  
+  var X = 10
+  var Y = 10
+  var MinesCount = 25
+  var MinesPlaced = false
+  let mine = 'o'
+  let free = ' '
+  let ignore = 'i'
+  var table = null
+  var iswin = false
+
+  let field = new Array()
+  for (i = 0; i < X; i++) {
+    field.push(new Array())
+    for (j = 0; j < Y; j++) {
+      field[i].push(free)
+    }
   }
+
+  function generateField() {
+    table = document.getElementById("table")
+    for (i = 0; i < X; i++) {
+      var tr = document.createElement("tr")
+      table.appendChild(tr)
+      for (j = 0; j < Y; j++) {
+        var td = document.createElement("td")
+        td.innerHTML = ""
+        td.onclick = function(event) {
+          handleFieldClick($(event.target))
+        }
+        tr.appendChild(td)
+      }
+    }
+  }
+
+  function handleFieldClick(cell) {
+    let clickIndices = getCellRowIndex(cell.get(0))
+    console.log(clickIndices)
+    if (!MinesPlaced) {
+      placeMines(clickIndices)
+      MinesPlaced = true
+    }
+    revealCell(clickIndices)
+  }
+
+  // в функцию нужно передавать $(this), запускать в онклик
+  function getCellRowIndex(cellClicked) {
+    var cellIndex = cellClicked.cellIndex;
+    var rowIndex = cellClicked.parentNode.rowIndex;
+    return [cellIndex, rowIndex]
+  }
+
+  function randomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max))
+  }
+
+  function randomCell() {
+    x = randomInt(X)
+    y = randomInt(Y)
+    return [x, y]
+  }
+
+  function placeMine(cell) {
+    fieldcell = field[cell[0]][cell[1]] 
+    if (fieldcell !== ignore && fieldcell !== mine) {
+      field[cell[0]][cell[1]] = mine
+      return true
+    }
+    return false
+  }
+
+  function placeMineRandomly() {
+    n_tries = 0
+    while (!placeMine(randomCell()) && n_tries < 15) {
+      n_tries += 1
+    }
+  }
+
+  function revealEverything() {
+    for (i = 0; i < X; i++) {
+      for (j = 0; j < Y; j++) {
+        revealCell([i, j])
+      }
+    }
+  }
+
+  let mineHTML = ""
+
+  function revealCell(coords) {
+    if (coords[0] < 0 || coords[0] >= X || coords[1] < 0 || coords[1] >= Y) {
+      return
+    }
+
+    cell = field[coords[1]][coords[0]]
+    row = table.find('tr').eq(coords[1]);
+    td = row.find('td').eq(coords[0]);
+    
+    if (cell === mine) {
+      revealMine(td)
+    }
+    else {
+      revealNumber(td, coords)
+    }
+  }
+
+  function revealMine(cell) {
+    if (iswin) {
+      cell.css("background-color", "rgb(255, 255, 255)")
+    }
+    else {
+      cell.css("background-color", "rgb(255, 0, 0)")
+    }
+    cell.html("X")
+  }
+
+  function revealNumber(cell, coords) {
+    mines = 0
+    for (var i = coords[1] - 1; i <= coords[1] + 1; i++) {
+      for (var j = coords[0] - 1; j <= coords[0] + 1; j++) {
+        if (i < 0 || i >= X || j < 0 || j >= Y) {
+          continue
+        }
+
+        if (field[i][j] === mine) {
+          mines += 1
+        }
+      }
+    }
+    cell.css("background-color", "rgb(255, 255, 255)")
+    if (mines === 0) {
+      
+    }
+    cell.html(mines)
+  }
+
+  function placeMines(ignoreCell) {
+    table = $("table")
+    //ignoreCellIndex = getCellRowIndex(ignoreCell);
+    for (var i = ignoreCell[1] - 1; i <= ignoreCell[1] + 1; i++) {
+      for (var j = ignoreCell[0] - 1; j <= ignoreCell[0] + 1; j++) {
+        if (i < 0 || i >= X || j < 0 || j >= Y) {
+          continue
+        }
+        
+        field[i][j] = ignore
+      }
+    }
+
+    for (i = 0; i < MinesCount; i++) {
+      placeMineRandomly()
+    }
+    console.log(field)
+  }
+
+  var script = document.createElement('script');
+  script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+  document.getElementsByTagName('head')[0].appendChild(script);
+
+  generateField();
+
 </script>
 
 </html>
