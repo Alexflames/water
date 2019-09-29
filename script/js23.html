@@ -44,9 +44,11 @@
   var MinesPlaced = false
   let mine = 'o'
   let free = ' '
+  let opened = '#'
   let ignore = 'i'
   var table = null
   var iswin = false
+  var cellsToOpen = X * Y - MinesCount
 
   let field = new Array()
   for (i = 0; i < X; i++) {
@@ -142,18 +144,24 @@
     }
   }
 
+  var openedEverything = false
   function revealMine(cell) {
     if (iswin) {
       cell.css("background-color", "rgb(255, 255, 255)")
     }
     else {
       cell.css("background-color", "rgb(255, 0, 0)")
+      if (!openedEverything) {
+        openedEverything = true
+        revealEverything()
+      }
     }
     cell.html("X")
   }
 
   function revealNumber(cell, coords) {
-    mines = 0
+    field[coords[1]][coords[0]] = opened
+    var mines = 0
     for (var i = coords[1] - 1; i <= coords[1] + 1; i++) {
       for (var j = coords[0] - 1; j <= coords[0] + 1; j++) {
         if (i < 0 || i >= X || j < 0 || j >= Y) {
@@ -165,11 +173,29 @@
         }
       }
     }
+
+
     cell.css("background-color", "rgb(255, 255, 255)")
     if (mines === 0) {
-      
+      for (var i = coords[1] - 1; i <= coords[1] + 1; i++) {
+        for (var j = coords[0] - 1; j <= coords[0] + 1; j++) {
+          if (i < 0 || i >= X || j < 0 || j >= Y || field[i][j] === opened) {
+            continue
+          }
+
+          revealCell([j, i])
+        }
+      }
     }
     cell.html(mines)
+    cellsToOpen -= 1
+    if (cellsToOpen === 0) {
+      iswin = true
+      if (!openedEverything) {
+        revealEverything()
+      }
+
+    }
   }
 
   function placeMines(ignoreCell) {
