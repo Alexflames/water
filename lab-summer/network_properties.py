@@ -8,6 +8,7 @@ from plfit import plfit
 import os
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+import matplotlib.axes as plt_axes 
 
 # GLOBAL CONSTANTS BLOCK
 DEBUG_INFO_PRINT = True
@@ -139,7 +140,7 @@ def get_binned_data(labels, values, num):
             binned_labels.append(bin_sum / bin_size)
     return binned_labels, binned_values  
     
-USE_LOG_BINNING = True
+USE_LOG_BINNING = False
 
 def gamma(network_input, output_name = None):
     distribution = network_distribution(network_input)[1:]
@@ -175,23 +176,27 @@ def gamma(network_input, output_name = None):
         
         npdistr = np.array(log_distribution)
         npdegrees = np.array(log_degrees).reshape(-1, 1)
+        plt.xlim(0, 2)
+        plt.ylim(-3, -1)
+
     else:
-        distribution = [math.log(x + 1, 10) for x in distribution]
-        npdistr = np.array(distribution)
+        distribution = [math.log(x + 0.01, 10) for x in distribution]
+        npdistr = np.array(distribution).reshape(-1, 1)
         degrees = [math.log(x + 1, 10) for x in degrees]
-        npdegrees = np.array(degrees).reshape(-1, 1)
+        npdegrees = np.array(degrees)
+        plt.xlim(-0.2, 3.2)
+        plt.ylim(-3.2, 0.2)
         
         
-    model.fit(npdegrees, npdistr)
+    model.fit(npdistr, npdegrees)
     answer = model.coef_[0]
     print(npdistr, npdegrees)
     print(model.coef_, model.intercept_)
     write_file(answer, output_name = output_name)
     
     plt.scatter(npdegrees, npdistr, color='black')
-    plt.plot(npdegrees, npdistr)
     plt.xlabel("log(10, степень_вершины)")
-    plt.ylabel("log(10, распределение_степеней)")
+    plt.ylabel("log(10, pk)")
     plt.show()
 
     return answer
