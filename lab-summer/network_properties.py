@@ -3,15 +3,17 @@ import math
 import networkx as nx
 import network_read as nread
 import numpy as np
+import powerlaw as pwl
+from plfit import plfit
 import os
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+import matplotlib.axes as plt_axes 
 
 # GLOBAL CONSTANTS BLOCK
 DEBUG_INFO_PRINT = True
 OUTPUT_ADD = ""
 FILENAME = None
-COUNTER = 0
 ########################
 
 def set_filename(filename):
@@ -58,7 +60,7 @@ def network_distribution(network_input):
     for vertex in range(0, kmax + 1):
         pk.append(0)
     for vertex in network:
-        pk[len(vertex)] += 1
+        pk[len(vertex)] += 1/len(network)
     return pk
 
 def network_log_distribution(network_input):
@@ -141,7 +143,7 @@ def get_binned_data(labels, values, num):
 USE_LOG_BINNING = False
 
 def gamma(network_input, output_name = None):
-    distribution = network_distribution(network_input)
+    distribution = network_distribution(network_input)[1:]
     model = LinearRegression()
     #distribution = [math.log(x + 1, 10) for x in distribution]
     degrees = [x for x in range(len(distribution))]
@@ -165,39 +167,38 @@ def gamma(network_input, output_name = None):
             log_distribution[group] += distribution[i]
 ##        while log_distribution[-1] == 0:
 ##            log_distribution = log_distribution[:-1]
-##        print("No-log rng:", log_rng)
+        print("No-log rng:", log_rng)
         log_degrees = [math.log(x, 10) for x in log_rng]
-##        print("Log rng:", log_degrees)
-##        print("No-log distr:", log_distribution)
-        log_distribution = [math.log(x + 0.000001, 10) for x in log_distribution]
-##        print("Log distr:", log_distribution)
+        print("Log rng:", log_degrees)
+        print("No-log distr:", log_distribution)
+        log_distribution = [math.log(x, 10) for x in log_distribution]
+        print("Log distr:", log_distribution)
         
-        npdistr = np.array(log_distribution).reshape(-1, 1)
-        npdegrees = np.array(log_degrees)
+        npdistr = np.array(log_distribution)
+        npdegrees = np.array(log_degrees).reshape(-1, 1)
+        plt.xlim(0, 2)
+        plt.ylim(-3, -1)
+
     else:
-##        distribution = [math.log(x + 0.00001, 10) for x in distribution]
+        distribution = [math.log(x + 0.01, 10) for x in distribution]
         npdistr = np.array(distribution).reshape(-1, 1)
-##        degrees = [math.log(x + 0.00001, 10) for x in degrees]
+        degrees = [math.log(x + 1, 10) for x in degrees]
         npdegrees = np.array(degrees)
+        plt.xlim(-0.2, 3.2)
+        plt.ylim(-3.2, 0.2)
         
         
     model.fit(npdistr, npdegrees)
     answer = model.coef_[0]
-##    print(npdistr, npdegrees)
-##    print(model.coef_, model.intercept_)
+    print(npdistr, npdegrees)
+    print(model.coef_, model.intercept_)
     write_file(answer, output_name = output_name)
-
-    plt.scatter(npdegrees, npdistr, color='black')
-##    plt.plot(npdegrees, npdistr)
-##    plt.xlabel("log(10, степень_вершины)")
-##    plt.ylabel("log(10, распределение_степеней)")
-    plt.xlabel("степень_вершины")
-    plt.ylabel("кол-во")
-    filename_binning = "_logbin" if USE_LOG_BINNING else "__linbin"
-    plt.title('Distribution' + filename_binning + str(COUNTER))
-    plt.savefig(output_name.split('.')[0] + str(COUNTER) + filename_binning + ".png")
-    plt.clf() # clear
     
+    plt.scatter(npdegrees, npdistr, color='black')
+    plt.xlabel("log(10, степень_вершины)")
+    plt.ylabel("log(10, pk)")
+    plt.show()
+
     return answer
     
 
@@ -337,14 +338,12 @@ def get_property(property_name, net):
 def get_properties_files(filename_base,
                          files_count_from, files_count_to,
                          size, properties, matrix = False):
-    global COUNTER
     try:
         os.makedirs("output")
     except:
         pass
     
     for i in range(int(files_count_from), int(files_count_to + 1)):
-        COUNTER = i
         if matrix == False:
             net = nread.read_undirected(filename_base + str(i) + ".csv",
                                         size, True)
@@ -352,4 +351,5 @@ def get_properties_files(filename_base,
             net = nread.read_undirected_matrix(filename_base + str(i) + ".csv",
                                                include_networkx = True)
         for prop in properties:
-            get_property(prop, net)    
+            get_property(prop, net)
+    
