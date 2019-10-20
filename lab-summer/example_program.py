@@ -34,10 +34,10 @@ def test_example(filename, size, matrix = False):
 ##                         files_count_to = 81, size = None,
 ##                         properties = props, matrix = True)
 
-filename = "1.2graph"
+filename = "1.1graph"
 npr.set_output_info(filename + ": ")
 props = ["gamma"]
 ##props = ["diameter", "acc", "density", "clique"]
 npr.get_properties_files(filename_base = "data/" + filename, files_count_from = 1,
-                         files_count_to = 1, size = None,
+                         files_count_to = 81, size = None,
                          properties = props, matrix = True)

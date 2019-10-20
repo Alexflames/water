@@ -28,6 +28,8 @@ def read_file(filename):
     for i in range(ord('а'), ord('я') + 1):
         for j in range(ord('а'), ord('я') + 1):
             pair = chr(i) + chr(j)
+            if (char_count[pair] == 0):
+                continue
             outstr = "{}: {:.4f}".format(pair, char_count[pair] / pairs_count)
             print(outstr)
             fw.write(outstr + '\n')

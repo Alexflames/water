@@ -14,12 +14,22 @@ print('Введите n, k. Например, (5, 7)')
 n, k = [int(x) for x in input().split()]
 
 
+def computeGCD(x, y):
+    while(y):
+        x, y = y, x % y
+    return x
+
+
 def unmod(a, m):
     a = a % m
     for x in range(1, m):
         if (a * x) % m == 1:
             return x
     return 1
+
+
+def deceaser(code):
+    return (code - k) * unmod(n, m)
 
 
 def create_alphabet():
@@ -64,7 +74,8 @@ def encode_file(filename):
     for row in f:
         encoded_string = ""
         for word in row.split():
-            encoded_string = encoded_string + ''.join([encode_sym(symbol) for symbol in word]) + ' '
+            encoded_string = encoded_string + ''.join(
+                [encode_sym(symbol) for symbol in word]) + ' '
         print(encoded_string)
         fw.write(encoded_string + '\n')
 
@@ -80,12 +91,15 @@ def decode_file(filename):
     for row in f:
         decoded_string = ""
         for word in row.split():
-            decoded_string = decoded_string + ''.join([decode_sym(symbol) for symbol in word]) + ' '
+            decoded_string = decoded_string + ''.join(
+                [decode_sym(symbol) for symbol in word]) + ' '
         print(decoded_string)
 
-
-create_alphabet()
-print(A_to_B)
-print(B_to_A)
-encode_file("task1.txt")
-decode_file("task1_res.txt")
+if (computeGCD(n, m) != 1):
+    print("НОД(n, m) =/= 1")
+else:
+    create_alphabet()
+    # print(A_to_B)
+    # print(B_to_A)
+    encode_file("task1.txt")
+    decode_file("task1_res.txt")

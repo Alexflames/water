@@ -23,6 +23,8 @@ def read_file(filename):
             chars_count += 1
 
     for i in range(ord('а'), ord('я') + 1):
+        if (char_count[chr(i)] == 0):
+            continue
         outstr = "{}: {:.4f}".format(chr(i), char_count[chr(i)] / chars_count)
         print(outstr)
         fw.write(outstr + '\n')
