@@ -87,7 +87,7 @@ sector_color = {'Utilities': '#FF7400', #orange
 distArray = ssd.squareform(d) 
 
 #single : minimum, complete : maximum, average, centroid
-distance_definition = 'complete'
+distance_definition = 'centroid'
 linked = linkage(distArray, distance_definition)
 labelList = [index_label[i] for i in range(1, len(d) + 1)]
 
@@ -102,7 +102,7 @@ dendrogram(linked,
             #labels=labelList,
             distance_sort='ascending',
             show_leaf_counts=True,
-            color_threshold=1.3,
+            color_threshold=0.94,
            #link_color_func=lambda k: color_fun(k),
            above_threshold_color='#222222'
            )
